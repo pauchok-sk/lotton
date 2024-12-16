@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241217013142">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header py-3">
+		<div class="container">
+			<nav class="d-flex align-items-center gap-2">
+				<a href="#" class="header__profile d-flex gap-2 align-items-center flex-fill">
+					<div class="btn-rect">
+						<img src="img/profile.svg" alt="icon" class="btn-rect__icon">
+					</div>
+					<span class="header__profile-name">@John_Doe</span>
+				</a>
+				<a href="#" class="btn-rect header__rect-btn">
+					<img src="img/dollar.svg" alt="icon" class="header__rect-icon" />
+					<span> 112$ </span>
+				</a>
+				<a href="#" class="btn-rect header__rect-btn">
+					<img src="img/star.svg" alt="icon" class="header__rect-icon" />
+					<span> 230 </span>
+				</a>
+				<a href="#" class="btn-rect header__notitifcations">
+					<svg class="btn-rect__icon">
+						<use xlink:href="img/icons/icons.svg#icon-bell"></use>
+					</svg>
+					<div class="header__notifications-circle"></div>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main">
+
+		<section class="my-bets">
+			<div class="container tab-container">
+				<div class="d-flex align-items-center gap-4 py-2 mb-2">
+					<h1 class="title-l flex-fill">Мои ставки</h1>
+					<button data-bs-toggle="modal" data-bs-target="#modal-statistic" class="btn-rect">
+						<svg class="btn-rect__icon">
+							<use xlink:href="img/icons/icons.svg#icon-chart"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="filters d-flex _big mb-3">
+					<button data-tab="all" class="btn-tab filters__btn _active">Все</button>
+					<button data-tab="win" class="btn-tab filters__btn">Выигрыш</button>
+					<button data-tab="loss" class="btn-tab filters__btn">Проигрыш</button>
+				</div>
+				<div data-tab="all" class="tab my-bets__tab flex-column gap-2 _active">
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _loss">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _win">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _cancel">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _cancel">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+				</div>
+				<div data-tab="win" class="tab my-bets__tab flex-column gap-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _win">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _win">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _win">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _win">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+				</div>
+				<div data-tab="loss" class="tab my-bets__tab flex-column gap-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _loss">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _loss">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _loss">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-bet" class="bet d-flex align-items-center gap-1 p-2 _loss">
+						<div class="bet__number d-flex align-items-center">
+							<svg class="bet__number-icon">
+								<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+							</svg>
+							<span>12.09.2024</span>
+						</div>
+						<span class="bet__number"> №123456 </span>
+						<div class="bet__status ms-auto">
+							<span class="bet__status-number">Чет</span>
+							<span class="bet__status-price">10 $</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="modal fade" id="modal-statistic" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content p-4 tab-container">
+				<div class="d-flex align-items-center gap-2 mb-4">
+					<h5 class="title-l flex-fill">Статистика</h5>
+					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="filters d-flex mb-5">
+					<button data-tab="all" class="btn-tab filters__btn _active">За все время</button>
+					<button data-tab="day" class="btn-tab filters__btn">День</button>
+					<button data-tab="month" class="btn-tab filters__btn">Месяц</button>
+					<button data-tab="year" class="btn-tab filters__btn">Год</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="modal-info-bet" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content p-4">
+				<div class="d-flex align-items-center gap-2 mb-4">
+					<h5 class="modal__title flex-fill">Розыгрыш</h5>
+					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="d-flex align-items-center justify-content-between gap-2 mb-4">
+					<span class="title-l flex-fill">№123456</span>
+					<div class="modal__number">
+						<svg class="modal__number-icon">
+							<use xlink:href="img/icons/icons.svg#icon-timer"></use>
+						</svg>
+						<span>12.09.2024 12:09</span>
+					</div>
+				</div>
+				<div class="modal-info__price-info mb-4">
+					<span class="modal-info__price-title">Призовой фонд</span>
+					<span class="modal-info__price">1 000 000 $</span>
+				</div>
+				<div class="modal__info-bet d-flex mb-4">
+					<div class="modal__info-bet-item _selected">
+						<span class="modal__info-bet-title">Чет</span>
+						<span class="modal__info-bet-value">36%</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Всего ставок</span>
+						<div class="modal__info-bet-value d-flex align-items-center gap-2">
+							<span>12 456</span>
+							<svg class="modal__info-bet-icon">
+								<use xlink:href="img/icons/icons.svg#icon-lock"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Нечет</span>
+						<span class="modal__info-bet-value">67%</span>
+					</div>
+				</div>
+				<div class="modal-info__res py-3 mb-4 _cancel">
+					<h5 class="modal-info__res-title mb-2">10$ на четное</h5>
+					<span class="modal-info__res-content">Отменена</span>
+				</div>
+				<div class="mb-4">
+					<div class="modal-info__reason-title">Причина отмены:</div>
+					<p class="modal-info__reason-value">Хочу поставить больше</p>
+				</div>
+				<div class="d-flex align-items-start gap-4">
+					<div class="flex-fill">
+						<span class="modal-info__hash-title">Хэш</span>
+						<p class="modal-info__hash">
+							fcad2f9fa968636b359f777e5afef3d9e641748e70c8269acf7d2f2217b7a708
+						</p>
+					</div>
+					<a href="#" class="modal-info__check-btn">Проверить</a>
+				</div>
+				<h5 class="modal-info__bottom-title mt-5 mb-3">Выигрыши:</h5>
+				<div class="d-flex flex-column gap-2">
+					<a href="#" class="user-card d-flex align-items-center gap-2">
+						<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+						<span class="user-card__title flex-fill">@UserName</span>
+						<span class="user-card__price">100 $</span>
+					</a>
+					<a href="#" class="user-card d-flex align-items-center gap-2">
+						<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+						<span class="user-card__title flex-fill">@UserName</span>
+						<span class="user-card__price">100 $</span>
+					</a>
+					<a href="#" class="user-card d-flex align-items-center gap-2">
+						<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+						<span class="user-card__title flex-fill">@UserName</span>
+						<span class="user-card__price">100 $</span>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="tab-bar__show"></div>
+	<div class="tab-bar">
+		<nav class="tab-bar__nav d-flex align-items-end gap-2">
+			<img src="img/frame-bar.svg" alt="frame" class="tab-bar__frame">
+			<a href="#" class="tab-bar__circle _active">
+				<div class="tab-bar__circle-wrapper">
+					<div class="tab-bar__circle-back"></div>
+					<div class="tab-bar__circle-back"></div>
+					<div class="tab-bar__circle-back"></div>
+					<svg class="tab-bar__circle-icon">
+						<use xlink:href="img/icons/icons.svg#icon-ticket"></use>
+					</svg>
+				</div>
+			</a>
+			<a href="#" class="tab-bar__btn _active">
+				<svg class="tab-bar__icon">
+					<use xlink:href="img/icons/icons.svg#icon-coins"></use>
+				</svg>
+				<span>Ставки</span>
+			</a>
+			<a href="#" class="tab-bar__btn _active">Розыгрыши</a>
+			<a href="#" class="tab-bar__btn">
+				<svg class="tab-bar__icon">
+					<use xlink:href="img/icons/icons.svg#icon-friends"></use>
+				</svg>
+				<span>Друзья</span>
+			</a>
+		</nav>
+	</div>
+
+	<script src="js/app.min.js?_v=20241217013142"></script>
+</body>
+
+</html>

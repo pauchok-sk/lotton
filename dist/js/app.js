@@ -1,18 +1,5 @@
 (() => {
     "use strict";
-    function isWebp() {
-        function testWebP(callback) {
-            let webP = new Image;
-            webP.onload = webP.onerror = function() {
-                callback(webP.height == 2);
-            };
-            webP.src = "data:image/webp;base64,UklGRjoAAABXRUJQVlA4IC4AAACyAgCdASoCAAIALmk0mk0iIiIiIgBoSygABc6WWgAA/veff/0PP8bA//LwYAAA";
-        }
-        testWebP((function(support) {
-            let className = support === true ? "webp" : "no-webp";
-            document.documentElement.classList.add(className);
-        }));
-    }
     !function(t, e) {
         "object" == typeof exports && "undefined" != typeof module ? module.exports = e() : "function" == typeof define && define.amd ? define(e) : (t = "undefined" != typeof globalThis ? globalThis : t || self).bootstrap = e();
     }(void 0, (function() {
@@ -3047,6 +3034,23 @@
             if (target.hidden) return _slideDown(target, duration); else return _slideUp(target, duration);
         };
     }
-    isWebp();
+    function tab() {
+        const buttonsTab = document.querySelectorAll(".btn-tab");
+        if (buttonsTab.length) buttonsTab.forEach((btn => {
+            btn.addEventListener("click", (e => {
+                console.log("click");
+                e.preventDefault();
+                const parent = btn.closest(".tab-container");
+                const tabId = btn.dataset.tab;
+                const currentTab = parent.querySelector(`.tab[data-tab="${tabId}"]`);
+                const tabs = parent.querySelectorAll(".tab");
+                buttonsTab.forEach((b => b.classList.remove("_active")));
+                tabs.forEach((t => t.classList.remove("_active")));
+                currentTab.classList.add("_active");
+                btn.classList.add("_active");
+            }));
+        }));
+    }
     spoller();
+    tab();
 })();

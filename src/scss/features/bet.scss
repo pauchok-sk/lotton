@@ -1,0 +1,68 @@
+.bet {
+  border-radius: 20px;
+  background-color: var(--d-white-08);
+  border: 1px solid var(--d-stroke-2);
+  color: var(--light);
+
+  &._loss {
+    border-color: var(--red);
+    background-color: var(--d-red-12);
+
+    .bet__status {
+      background-color: var(--red);
+      color: var(--bg);
+    }
+  }
+  &._win {
+    border-color: var(--green);
+    background-color: var(--d-green-12);
+
+    .bet__status {
+      background-color: var(--green);
+      color: var(--bg);
+    }
+  }
+  &._cancel {
+    .bet__status {
+      background-color: var(--light);
+      color: var(--bg);
+    }
+  }
+
+  &__number {
+    background-color: var(--d-white-04);
+    border-radius: 20px;
+    padding: 4px 8px;
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__number-icon {
+    width: 12px;
+    height: 12px;
+  }
+  &__status {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4px;
+    text-align: center;
+    color: white;
+    background-color: var(--purple);
+    border-radius: 12px;
+    background-color: var(--purple);
+    min-width: 64px;
+  }
+  &__status-number {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  &__status-price {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+}

@@ -15,6 +15,8 @@
 
 // features
 @import "./features/game-card";
+@import "./features/bet";
+@import "./features/user-card";
 
 // widgets
 @import "./widgets/tab-bar";
@@ -25,11 +27,13 @@
 @import "./ui/modal";
 @import "./ui/input";
 @import "./ui/title";
+@import "./ui/filters";
+@import "./ui/tab";
 
 // components
 @import "./components/header";
 @import "./components/header-prev";
 
-@import "./components/games";
+@import "./components/my-bets";
 
 @import "./components/footer";

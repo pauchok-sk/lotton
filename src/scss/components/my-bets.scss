@@ -1,0 +1,7 @@
+.my-bets {
+  &__tab {
+    &._active {
+      display: flex !important;
+    }
+  }
+}

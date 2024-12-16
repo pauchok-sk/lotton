@@ -66,6 +66,13 @@
         color: var(--green);
       }
     }
+    &._cancel {
+      background-color: var(--d-stroke);
+      border: 1px solid var(--light);
+      .modal-info__res-title {
+        color: white;
+      }
+    }
   }
   &__res-title {
     font-size: 18px;
@@ -86,6 +93,24 @@
     font-size: 24px;
     font-weight: 700;
     line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+  &__reason-title {
+    color: var(--light);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__reason-value {
+    margin: 0;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+  &__bottom-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
     letter-spacing: -0.5px;
   }
 }

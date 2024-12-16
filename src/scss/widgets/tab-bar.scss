@@ -25,16 +25,17 @@
       z-index: -1;
       background-color: var(--bg);
       border-top: 1px solid var(--d-stroke);
-      border-bottom: 1px solid var(--d-stroke);
       top: 0;
       height: 100%;
       width: calc(50% - 60px);
     }
     &::before {
       left: 0;
+      border-radius: 24px 0px 0px 0px;
     }
     &::after {
       right: 0;
+      border-radius: 0px 24px 0px 0px;
     }
     a {
       color: var(--light);

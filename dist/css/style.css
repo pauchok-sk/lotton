@@ -194,7 +194,8 @@ body {
   color: #fff
 }
 .main {
-  padding-top: 73px
+  padding-top: 73px;
+  padding-bottom: 110px
 }
 .container {
   width: 100%;
@@ -6626,6 +6627,13 @@ fieldset:disabled .btn {
 .modal-info__res._green .modal-info__res-title {
   color: var(--green)
 }
+.modal-info__res._cancel {
+  background-color: var(--d-stroke);
+  border: 1px solid var(--light)
+}
+.modal-info__res._cancel .modal-info__res-title {
+  color: #fff
+}
 .modal-info__res-title {
   font-size: 18px;
   line-height: 24px;
@@ -6644,6 +6652,24 @@ fieldset:disabled .btn {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
+  letter-spacing: -.5px
+}
+.modal-info__reason-title {
+  color: var(--light);
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.modal-info__reason-value {
+  margin: 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .1px
+}
+.modal-info__bottom-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
   letter-spacing: -.5px
 }
 .game-card {
@@ -6753,6 +6779,91 @@ fieldset:disabled .btn {
   width: 18px;
   height: 18px
 }
+.bet {
+  border-radius: 20px;
+  background-color: var(--d-white-08);
+  border: 1px solid var(--d-stroke-2);
+  color: var(--light)
+}
+.bet._loss {
+  border-color: var(--red);
+  background-color: var(--d-red-12)
+}
+.bet._loss .bet__status {
+  background-color: var(--red);
+  color: var(--bg)
+}
+.bet._win {
+  border-color: var(--green);
+  background-color: var(--d-green-12)
+}
+.bet._win .bet__status {
+  background-color: var(--green);
+  color: var(--bg)
+}
+.bet._cancel .bet__status {
+  background-color: var(--light);
+  color: var(--bg)
+}
+.bet__number {
+  background-color: var(--d-white-04);
+  border-radius: 20px;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.bet__number-icon {
+  width: 12px;
+  height: 12px
+}
+.bet__status {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4px;
+  text-align: center;
+  color: #fff;
+  background-color: var(--purple);
+  border-radius: 12px;
+  background-color: var(--purple);
+  min-width: 64px
+}
+.bet__status-number {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase
+}
+.bet__status-price {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px
+}
+.user-card {
+  background-color: var(--d-white-08);
+  border: 1px solid var(--d-stroke-2);
+  border-radius: 20px;
+  text-decoration: none;
+  padding: 11px 24px 11px 20px;
+  color: #fff
+}
+.user-card__icon {
+  width: 32px;
+  height: 32px;
+  margin-right: 8px
+}
+.user-card__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px
+}
+.user-card__price {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--green)
+}
 .tab-bar {
   position: fixed;
   bottom: 0;
@@ -6784,16 +6895,17 @@ fieldset:disabled .btn {
   z-index: -1;
   background-color: var(--bg);
   border-top: 1px solid var(--d-stroke);
-  border-bottom: 1px solid var(--d-stroke);
   top: 0;
   height: 100%;
   width: calc(50% - 60px)
 }
 .tab-bar__nav::before {
-  left: 0
+  left: 0;
+  border-radius: 24px 0 0 0
 }
 .tab-bar__nav::after {
-  right: 0
+  right: 0;
+  border-radius: 0 24px 0 0
 }
 .tab-bar__nav a {
   color: var(--light);
@@ -6943,7 +7055,8 @@ fieldset:disabled .btn {
 .modal-dialog {
   margin: 0;
   width: 100%;
-  margin: 0 auto
+  max-height: calc(100vh - 10px);
+  margin: 10px auto 0 auto
 }
 .modal-content {
   border-radius: 28px 28px 0 0;
@@ -7105,6 +7218,42 @@ fieldset:disabled .btn {
   margin: 0;
   font-weight: 700
 }
+.filters {
+  border-radius: 100px;
+  border: 1px solid var(--d-stroke-2);
+  overflow: hidden
+}
+.filters._big .filters__btn {
+  font-size: 16px
+}
+.filters__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px;
+  color: var(--light);
+  padding: 10px 12px;
+  border: none;
+  flex: 1;
+  white-space: nowrap;
+  background-color: rgba(0,0,0,0);
+  transition: color .2s ease,background-color .2s ease
+}
+.filters__btn._active {
+  background-color: var(--purple);
+  color: #fff
+}
+.filters__btn:not(:last-child) {
+  border-right: 1px solid var(--d-stroke-2)
+}
+.tab {
+  display: none
+}
+.tab._active {
+  display: block
+}
 .header {
   position: fixed;
   border-bottom: 1px solid var(--d-stroke);
@@ -7183,8 +7332,8 @@ fieldset:disabled .btn {
   width: 24px;
   height: 24px
 }
-.games__cards {
-  padding-bottom: 110px
+.my-bets__tab._active {
+  display: flex!important
 }
 @media (min-width:576px) {
   .container,
