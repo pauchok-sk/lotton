@@ -15,6 +15,17 @@
       color: var(--bg);
     }
   }
+  &._loss {
+    border-color: var(--red);
+    background-color: var(--d-red-12);
+    .game-card__price {
+      color: var(--red);
+    }
+  }
+  &._win {
+    border-color: var(--green);
+    background-color: var(--d-green-12);
+  }
 
   &__number {
     padding: 4px 8px;
@@ -31,6 +42,7 @@
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.5px;
+    text-transform: uppercase;
   }
   &__time {
     padding: 4px 8px;
@@ -62,8 +74,22 @@
       flex: 1;
     }
 
-    &._primary {
+    &._selected {
       background-color: var(--purple);
+    }
+    &._green {
+      color: var(--green);
+    }
+    &._red {
+      color: var(--red);
+    }
+    &._primary-green {
+      background-color: var(--green);
+      color: var(--bg);
+    }
+    &._primary-red {
+      background-color: var(--red);
+      color: var(--bg);
     }
   }
   &__body-title {

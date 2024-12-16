@@ -1,0 +1,68 @@
+.input-control {
+  position: relative;
+  color: var(--light);
+  display: flex;
+  align-items: center;
+  width: 100%;
+  &._error {
+    .input {
+      outline: 4px solid var(--red-light);
+    }
+    .input-title {
+      color: var(--red-light);
+    }
+    .input-icon {
+      display: none;
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      width: 40px;
+      height: 40px;
+      background: url("@img/icon-error.svg") center / 100% auto no-repeat;
+      right: 8px;
+    }
+  }
+
+  .input {
+    min-height: 56px;
+    border-radius: 20px;
+    border: 1px solid var(--d-stroke-2);
+    padding: 4px 16px;
+    background-color: transparent;
+    outline: none;
+    width: 100%;
+
+    color: var(--light);
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    padding-right: 40px;
+    &:focus {
+      outline: 4px solid var(--purple-light);
+      & + label {
+        color: var(--purple-light);
+      }
+    }
+  }
+  .input-title {
+    position: absolute;
+    left: 16px;
+    top: 0;
+    padding: 0;
+    height: auto;
+    padding: 0 4px;
+    transform: translateY(-50%);
+    background-color: var(--bg);
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  .input-icon {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    right: 12px;
+  }
+}

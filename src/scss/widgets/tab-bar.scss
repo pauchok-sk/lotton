@@ -61,6 +61,7 @@
     position: absolute;
     border-radius: 50%;
     z-index: -1;
+    display: none;
     &:first-child {
       inset: -2px;
       background: linear-gradient(

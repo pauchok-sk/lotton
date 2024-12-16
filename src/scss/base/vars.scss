@@ -4,7 +4,7 @@
   --d-stroke-2: #4D5060;
 
   --mirage: #181A25;
-  --blue: #4D5974;
+  --d-icons: #4D5974;
   --light: #BFBDCA;
 
   --red: #FF3125;
@@ -12,8 +12,17 @@
   --purple: #771BEC;
   --orange: #FF9500;
 
+  --red-light: #F2B8B5;
+  --purple-light: #D0BCFF;
+
   --d-white-08: rgba(255, 255, 255, 0.08);
   --d-white-04: rgba(255, 255, 255, 0.04);
+  --d-white-02: rgba(255, 255, 255, 0.20);
+
+  --d-red-12: rgba(255, 49, 37, 0.12);
+  --d-green-12: rgba(70, 224, 68, 0.12);
+
+  --d-purple-12: rgba(119, 27, 236, 0.12);
 
   --orange-linear: linear-gradient(180deg, #ff570f 0%, #ff8214 50%, #ffa600 100%);;
 }

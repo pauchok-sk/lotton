@@ -1,0 +1,49 @@
+.modal-bet {
+  &__price {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: var(--green);
+  }
+  &__checkbox {
+    position: relative;
+    border-radius: 100px;
+    overflow: hidden;
+    border: 1px solid var(--d-stroke-2);
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      background-color: var(--d-stroke-2);
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__check-input {
+    display: none;
+    &:checked + label {
+      background-color: var(--purple);
+      color: white
+    }
+  }
+  &__check-btn {
+    @include flex-center;
+    min-height: 40px;
+    width: 50%;
+    text-align: center;
+
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+  }
+  &__content {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+}

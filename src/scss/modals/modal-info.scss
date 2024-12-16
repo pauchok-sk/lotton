@@ -1,0 +1,91 @@
+.modal-info {
+  &__price-info {
+    text-align: center;
+  }
+  &__price-title {
+    display: block;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--light);
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    text-align: center;
+    color: var(--green);
+  }
+  &__hash-title {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__hash {
+    display: block;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    margin: 0;
+    word-break: break-all;
+  }
+  &__check-btn {
+    display: block;
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--orange);
+    text-decoration: none;
+  }
+  &__res {
+    text-align: center;
+    border-radius: 20px;
+    background-color: var(--d-purple-12);
+    border: 1px solid var(--purple);
+
+    &._red {
+      border-color: var(--red);
+      background-color: var(--d-red-12);
+
+      .modal-info__res-title {
+        color: var(--red);
+      }
+      .modal-info__res-content {
+        color: var(--light);
+      }
+    }
+    &._green {
+      border-color: var(--green);
+      background-color: var(--d-green-12);
+
+      .modal-info__res-title {
+        color: var(--green);
+      }
+    }
+  }
+  &__res-title {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: var(--purple);
+    font-weight: 700;
+  }
+  &__res-content {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__res-price {
+    color: var(--green);
+    display: block;
+
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+}

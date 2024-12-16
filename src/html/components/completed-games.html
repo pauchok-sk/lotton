@@ -1,15 +1,78 @@
-<section class="games">
+<section class="comleted-games">
   <div class="container">
     <div class="d-flex align-items-center gap-4 py-2 mb-2">
-      <h1 class="title-l flex-fill">Розыгрыши</h1>
-      <a href="#" class="btn-rect">
-        <svg class="btn-rect__icon">
-          <use xlink:href="img/icons/icons.svg#icon-chart"></use>
-        </svg>
-      </a>
+      <h1 class="title-l flex-fill">Завершённые розыгрыши</h1>
     </div>
-    <div class="d-flex flex-column gap-2 games__cards">
-      <div class="game-card p-2">
+    <div class="d-flex flex-column gap-2 pb-2">
+      <div
+        class="game-card p-2"
+        data-bs-toggle="modal"
+        data-bs-target="#modal-info"
+      >
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="game-card__number">№123456</div>
+          <span class="game-card__price">1 000 000 $</span>
+          <div class="game-card__time d-flex align-items-center gap-1">
+            <svg class="game-card__time-icon">
+              <use xlink:href="img/icons/icons.svg#icon-timer"></use>
+            </svg>
+            <span>12h:49m</span>
+          </div>
+        </div>
+        <div
+          class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
+        >
+          <div class="game-card__body-item _green">
+            <span class="game-card__body-title">Чет</span>
+            <span class="game-card__body-content">36%</span>
+          </div>
+          <div class="game-card__body-item">
+            <span class="game-card__body-title">Всего ставок</span>
+            <span class="game-card__body-content">12 456</span>
+          </div>
+          <div class="game-card__body-item _red">
+            <span class="game-card__body-title">Нечет</span>
+            <span class="game-card__body-content">67%</span>
+          </div>
+        </div>
+      </div>
+      <div
+        data-bs-toggle="modal"
+        data-bs-target="#modal-info-loss"
+        class="game-card p-2 _loss"
+      >
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="game-card__number">№123456</div>
+          <span class="game-card__price">1 000 000 $</span>
+          <div class="game-card__time d-flex align-items-center gap-1">
+            <svg class="game-card__time-icon">
+              <use xlink:href="img/icons/icons.svg#icon-timer"></use>
+            </svg>
+            <span>12h:49m</span>
+          </div>
+        </div>
+        <div
+          class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
+        >
+          <div class="game-card__body-item _primary-green">
+            <span class="game-card__body-title">Чет</span>
+            <span class="game-card__body-content">36%</span>
+          </div>
+          <div class="game-card__body-item">
+            <span class="game-card__body-title">Всего ставок</span>
+            <span class="game-card__body-content">12 456</span>
+          </div>
+          <div class="game-card__body-item _primary-red">
+            <span class="game-card__body-title">Нечет</span>
+            <span class="game-card__body-content">67%</span>
+          </div>
+        </div>
+      </div>
+      <div
+        data-bs-toggle="modal"
+        data-bs-target="#modal-info-win"
+        class="game-card p-2 _win"
+      >
         <div class="d-flex align-items-center justify-content-between gap-2">
           <div class="game-card__number">№123456</div>
           <span class="game-card__price">1 000 000 $</span>
@@ -31,26 +94,20 @@
             <span class="game-card__body-title">Всего ставок</span>
             <span class="game-card__body-content">12 456</span>
           </div>
-          <div class="game-card__body-item">
+          <div class="game-card__body-item _primary-green">
             <span class="game-card__body-title">Нечет</span>
             <span class="game-card__body-content">67%</span>
           </div>
         </div>
-        <button
-          data-bs-toggle="modal"
-          data-bs-target="#modal-bet"
-          class="btn-main _primary"
-        >
-          <svg class="btn-main__icon">
-            <use xlink:href="img/icons/icons.svg#icon-coins"></use>
-          </svg>
-          <span>Сделать ставку</span>
-        </button>
       </div>
-      <div class="game-card p-2 _done">
+      <div
+        data-bs-toggle="modal"
+        data-bs-target="#modal-info-current"
+        class="game-card p-2"
+      >
         <div class="d-flex align-items-center justify-content-between gap-2">
-          <div class="game-card__number">№123456</div>
-          <span class="game-card__price">1 000 000 $</span>
+          <span class="game-card__number">№123456</span>
+          <span class="game-card__price">zero</span>
           <div class="game-card__time d-flex align-items-center gap-1">
             <svg class="game-card__time-icon">
               <use xlink:href="img/icons/icons.svg#icon-timer"></use>
@@ -61,42 +118,6 @@
         <div
           class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
         >
-          <div class="game-card__body-item _selected">
-            <span class="game-card__body-title">Чет</span>
-            <span class="game-card__body-content">36%</span>
-          </div>
-          <div class="game-card__body-item">
-            <span class="game-card__body-title">Всего ставок</span>
-            <span class="game-card__body-content">12 456</span>
-          </div>
-          <div class="game-card__body-item">
-            <span class="game-card__body-title">Нечет</span>
-            <span class="game-card__body-content">67%</span>
-          </div>
-        </div>
-        <div
-          class="game-card__status d-flex align-items-center gap-2 justify-content-center"
-        >
-          <svg class="game-card__status-icon">
-            <use xlink:href="img/icons/icons.svg#icon-coins"></use>
-          </svg>
-          <span>Ставка сделана</span>
-        </div>
-      </div>
-      <div class="game-card p-2">
-        <div class="d-flex align-items-center justify-content-between gap-2">
-          <div class="game-card__number">№123456</div>
-          <span class="game-card__price">1 000 000 $</span>
-          <div class="game-card__time d-flex align-items-center gap-1">
-            <svg class="game-card__time-icon">
-              <use xlink:href="img/icons/icons.svg#icon-hourglass"></use>
-            </svg>
-            <span>Ожидание</span>
-          </div>
-        </div>
-        <div
-          class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
-        >
           <div class="game-card__body-item">
             <span class="game-card__body-title">Чет</span>
             <span class="game-card__body-content">36%</span>
@@ -105,54 +126,10 @@
             <span class="game-card__body-title">Всего ставок</span>
             <span class="game-card__body-content">12 456</span>
           </div>
-          <div class="game-card__body-item">
+          <div class="game-card__body-item _primary-green">
             <span class="game-card__body-title">Нечет</span>
             <span class="game-card__body-content">67%</span>
           </div>
-        </div>
-        <div
-          class="game-card__status d-flex align-items-center gap-2 justify-content-center"
-        >
-          <svg class="game-card__status-icon">
-            <use xlink:href="img/icons/icons.svg#icon-coins"></use>
-          </svg>
-          <span>Приём ставок окончен</span>
-        </div>
-      </div>
-      <div class="game-card p-2 _pending">
-        <div class="d-flex align-items-center justify-content-between gap-2">
-          <div class="game-card__number">№123456</div>
-          <span class="game-card__price">1 000 000 $</span>
-          <div class="game-card__time d-flex align-items-center gap-1">
-            <svg class="game-card__time-icon">
-              <use xlink:href="img/icons/icons.svg#icon-hourglass"></use>
-            </svg>
-            <span>Ожидание</span>
-          </div>
-        </div>
-        <div
-          class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
-        >
-          <div class="game-card__body-item">
-            <span class="game-card__body-title">Чет</span>
-            <span class="game-card__body-content">36%</span>
-          </div>
-          <div class="game-card__body-item">
-            <span class="game-card__body-title">Всего ставок</span>
-            <span class="game-card__body-content">12 456</span>
-          </div>
-          <div class="game-card__body-item _selected">
-            <span class="game-card__body-title">Нечет</span>
-            <span class="game-card__body-content">67%</span>
-          </div>
-        </div>
-        <div
-          class="game-card__status d-flex align-items-center gap-2 justify-content-center"
-        >
-          <svg class="game-card__status-icon">
-            <use xlink:href="img/icons/icons.svg#icon-coins"></use>
-          </svg>
-          <span>Приём ставок окончен</span>
         </div>
       </div>
     </div>

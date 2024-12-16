@@ -9,6 +9,10 @@
 
 @import "./libs/bootstrap.min";
 
+// modals
+@import "./modals/modal-bet";
+@import "./modals/modal-info";
+
 // features
 @import "./features/game-card";
 
@@ -18,9 +22,13 @@
 // ui
 @import "./ui/button";
 @import "./ui/list";
+@import "./ui/modal";
+@import "./ui/input";
+@import "./ui/title";
 
 // components
 @import "./components/header";
+@import "./components/header-prev";
 
 @import "./components/games";
 
