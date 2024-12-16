@@ -149,10 +149,17 @@ template {
 :root {
   --bg: #0F111C;
   --d-stroke: #2A2D3D;
+  --d-stroke-2: #4D5060;
   --mirage: #181A25;
   --blue: #4D5974;
   --light: #BFBDCA;
-  --red: #FF3125
+  --red: #FF3125;
+  --green: #46E044;
+  --purple: #771BEC;
+  --orange: #FF9500;
+  --d-white-08: rgba(255, 255, 255, 0.08);
+  --d-white-04: rgba(255, 255, 255, 0.04);
+  --orange-linear: linear-gradient(180deg, #ff570f 0%, #ff8214 50%, #ffa600 100%)
 }
 html {
   box-sizing: border-box
@@ -179,6 +186,9 @@ body {
 .body {
   background-color: var(--bg);
   color: #fff
+}
+.main {
+  padding-top: 73px
 }
 .container {
   width: 100%;
@@ -6496,6 +6506,189 @@ fieldset:disabled .btn {
 .z-3 {
   z-index: 3!important
 }
+.game-card {
+  border-radius: 20px;
+  background-color: var(--d-white-08);
+  border: 1px solid var(--d-stroke-2);
+  color: var(--light)
+}
+.game-card._done .game-card__time {
+  color: var(--green)
+}
+.game-card._pending .game-card__time {
+  background-color: var(--green);
+  color: var(--bg)
+}
+.game-card__number {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: var(--d-white-04);
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.game-card__price {
+  color: var(--green);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px
+}
+.game-card__time {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: var(--d-white-04);
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.game-card__time-icon {
+  width: 12px;
+  height: 12px
+}
+.game-card__body {
+  border-radius: 12px;
+  padding: 4px;
+  background-color: var(--d-white-04)
+}
+.game-card__body-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding-top: 2px;
+  flex: 0 1 64px;
+  border-radius: 8px
+}
+.game-card__body-item:nth-child(2) {
+  flex: 1
+}
+.game-card__body-item._primary {
+  background-color: var(--purple)
+}
+.game-card__body-title {
+  font-size: 10px;
+  line-height: 12px;
+  letter-spacing: .5px;
+  text-transform: uppercase
+}
+.game-card__body-content {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px
+}
+.game-card__status {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  min-height: 40px
+}
+.game-card__status-icon {
+  width: 18px;
+  height: 18px
+}
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  border-radius: 24px 24px 0 0;
+  background-color: var(--bg);
+  border: 1px solid var(--d-stroke);
+  padding: 8px;
+  -webkit-filter: drop-shadow(0 -8px 20px rgba(0, 0, 0, .25));
+  filter: drop-shadow(0 -8px 20px rgba(0, 0, 0, .25))
+}
+.tab-bar__show {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 200px;
+  background: linear-gradient(180deg,rgba(0,0,0,0) 0,#000 100%);
+  pointer-events: none;
+  z-index: 50
+}
+.tab-bar__nav {
+  position: relative
+}
+.tab-bar__nav a {
+  color: var(--light);
+  text-decoration: none
+}
+.tab-bar__circle {
+  display: block;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  width: 56px;
+  height: 56px
+}
+.tab-bar__circle._active .tab-bar__circle-back {
+  display: block
+}
+.tab-bar__circle._active .tab-bar__circle-wrapper {
+  background: var(--orange-linear);
+  color: #fff;
+  -webkit-filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .15)) drop-shadow(0 1px 2px rgba(0, 0, 0, .3));
+  filter: drop-shadow(0 2px 6px rgba(0, 0, 0, .15)) drop-shadow(0 1px 2px rgba(0, 0, 0, .3))
+}
+.tab-bar__circle-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--d-stroke);
+  background-color: var(--bg);
+  border-radius: 50%;
+  z-index: 1
+}
+.tab-bar__circle-back {
+  position: absolute;
+  border-radius: 50%;
+  z-index: -1
+}
+.tab-bar__circle-back:first-child {
+  inset: -2px;
+  background: linear-gradient(180deg,rgba(255,87,15,.24) 0,rgba(255,130,20,.24) 50%,rgba(255,166,0,.24) 100%)
+}
+.tab-bar__circle-back:nth-child(2) {
+  inset: -4px;
+  background: linear-gradient(180deg,rgba(255,87,15,.24) 0,rgba(255,130,20,.24) 50%,rgba(255,166,0,.24) 100%)
+}
+.tab-bar__circle-back:nth-child(3) {
+  inset: -6px;
+  background: linear-gradient(180deg,rgba(255,87,15,.48) 0,rgba(255,130,20,.48) 50%,rgba(255,166,0,.48) 100%);
+  -webkit-filter: blur(4px);
+  filter: blur(4px)
+}
+.tab-bar__circle-icon {
+  width: 24px;
+  height: 24px
+}
+.tab-bar__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 4px;
+  flex: 1;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.tab-bar__btn._active {
+  color: var(--orange)
+}
+.tab-bar__icon {
+  width: 24px;
+  height: 24px
+}
 .btn-rect {
   display: flex;
   align-items: center;
@@ -6517,25 +6710,59 @@ fieldset:disabled .btn {
   width: 30px;
   height: 30px
 }
+.btn-main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  min-height: 40px;
+  width: 100%;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px
+}
+.btn-main._primary {
+  color: var(--bg);
+  background: var(--orange-linear)
+}
+.btn-main__icon {
+  width: 18px;
+  height: 18px
+}
 .list {
   padding-left: 0;
   margin: 0;
   list-style: none
 }
 .header {
-  border-bottom: 1px solid var(--d-stroke)
+  position: fixed;
+  border-bottom: 1px solid var(--d-stroke);
+  background-color: var(--bg);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100
 }
 .header__profile {
-  flex: 1
+  flex: 1;
+  text-decoration: none
 }
 .header__profile-name {
   font-size: 14px;
   font-weight: 700;
-  line-height: 20px
+  line-height: 20px;
+  color: #fff
 }
 .header__rect-btn {
   padding: 8px;
-  color: var(--light)
+  color: var(--light);
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  text-decoration: none
 }
 .header__rect-icon {
   flex-shrink: 0;
@@ -6553,6 +6780,9 @@ fieldset:disabled .btn {
   top: 12px;
   right: 10px;
   z-index: 1
+}
+.games__cards {
+  padding-bottom: 64px
 }
 @media (min-width:576px) {
   .container,

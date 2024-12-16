@@ -1,26 +1,28 @@
 <header class="header py-3">
-	<div class="container d-flex align-items-center gap-2">
-		<div class="d-flex gap-2 align-items-center flex-fill">
-			<button href="#" class="btn-rect">
+	<div class="container">
+		<nav class="d-flex align-items-center gap-2">
+			<a href="#" class="header__profile d-flex gap-2 align-items-center flex-fill">
+				<div class="btn-rect">
+					<svg class="btn-rect__icon">
+						<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+					</svg>
+				</div>
+				<span class="header__profile-name">@John_Doe</span>
+			</a>
+			<a href="#" class="btn-rect header__rect-btn">
+				<img src="img/dollar.svg" alt="icon" class="header__rect-icon" />
+				<span> 112$ </span>
+			</a>
+			<a href="#" class="btn-rect header__rect-btn">
+				<img src="img/star.svg" alt="icon" class="header__rect-icon" />
+				<span> 230 </span>
+			</a>
+			<a href="#" class="btn-rect header__notitifcations">
 				<svg class="btn-rect__icon">
-					<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+					<use xlink:href="img/icons/icons.svg#icon-bell"></use>
 				</svg>
-			</button>
-			<span class="header__profile-name">@John_Doe</span>
-		</div>
-		<a href="#" class="btn-rect header__rect-btn">
-			<img src="img/dollar.svg" alt="icon" class="header__rect-icon" />
-			<span> 112$ </span>
-		</a>
-		<a href="#" class="btn-rect header__rect-btn">
-			<img src="img/star.svg" alt="icon" class="header__rect-icon" />
-			<span> 112$ </span>
-		</a>
-		<a href="#" class="btn-rect header__notitifcations">
-			<svg class="btn-rect__icon">
-				<use xlink:href="img/icons/icons.svg#icon-bell"></use>
-			</svg>
-			<div class="header__notifications-circle"></div>
-		</a>
+				<div class="header__notifications-circle"></div>
+			</a>
+		</nav>
 	</div>
 </header>

@@ -1,8 +1,19 @@
 :root {
   --bg: #0F111C;
   --d-stroke: #2A2D3D;
+  --d-stroke-2: #4D5060;
+
   --mirage: #181A25;
   --blue: #4D5974;
   --light: #BFBDCA;
+
   --red: #FF3125;
+  --green: #46E044;
+  --purple: #771BEC;
+  --orange: #FF9500;
+
+  --d-white-08: rgba(255, 255, 255, 0.08);
+  --d-white-04: rgba(255, 255, 255, 0.04);
+
+  --orange-linear: linear-gradient(180deg, #ff570f 0%, #ff8214 50%, #ffa600 100%);;
 }

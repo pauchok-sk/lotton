@@ -13,9 +13,33 @@
   border: 1px solid var(--d-stroke);
   background-color: var(--mirage);
   color: var(--blue);
-  
+
   &__icon {
     width: 30px;
     height: 30px;
+  }
+}
+
+.btn-main {
+  @include flex-center;
+  gap: 8px;
+  cursor: pointer;
+  border: none;
+  border-radius: 100px;
+  min-height: 40px;
+  width: 100%;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+
+  &._primary {
+    color: var(--bg);
+    background: var(--orange-linear);
+  }
+
+  &__icon {
+    width: 18px;
+    height: 18px;
   }
 }

@@ -1,0 +1,90 @@
+.game-card {
+  border-radius: 20px;
+  background-color: var(--d-white-08);
+  border: 1px solid var(--d-stroke-2);
+  color: var(--light);
+
+  &._done {
+    .game-card__time {
+      color: var(--green);
+    }
+  }
+  &._pending {
+    .game-card__time {
+      background-color: var(--green);
+      color: var(--bg);
+    }
+  }
+
+  &__number {
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: var(--d-white-04);
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__price {
+    color: var(--green);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+  }
+  &__time {
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: var(--d-white-04);
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__time-icon {
+    width: 12px;
+    height: 12px;
+  }
+  &__body {
+    border-radius: 12px;
+    padding: 4px;
+    background-color: var(--d-white-04);
+  }
+  &__body-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-top: 2px;
+    flex: 0 1 64px;
+    border-radius: 8px;
+    &:nth-child(2) {
+      flex: 1;
+    }
+
+    &._primary {
+      background-color: var(--purple);
+    }
+  }
+  &__body-title {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  &__body-content {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__status {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    min-height: 40px;
+  }
+  &__status-icon {
+    width: 18px;
+    height: 18px;
+  }
+}

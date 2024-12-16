@@ -1,16 +1,29 @@
 .header {
+  position: fixed;
   border-bottom: 1px solid var(--d-stroke);
+  background-color: var(--bg);
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
   &__profile {
     flex: 1;
+    text-decoration: none;
   }
   &__profile-name {
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
+    color: white;
   }
   &__rect-btn {
     padding: 8px;
     color: var(--light);
+
+    font-size: 10px;
+    line-height: 16px; 
+    letter-spacing: 0.5px;
+    text-decoration: none;
   }
   &__rect-icon {
     flex-shrink: 0;

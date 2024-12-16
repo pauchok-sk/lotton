@@ -1,0 +1,117 @@
+.tab-bar {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 100;
+  position: fixed;
+  border-radius: 24px 24px 0px 0px;
+  background-color: var(--bg);
+  border: 1px solid var(--d-stroke);
+  padding: 8px;
+  filter: drop-shadow(0px -8px 20px rgba(0, 0, 0, 0.25));
+  &__show {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 200px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000 100%);
+    pointer-events: none;
+    z-index: 50;
+  }
+  &__nav {
+    position: relative;
+    a {
+      color: var(--light);
+      text-decoration: none;
+    }
+  }
+  &__circle {
+    display: block;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 56px;
+    height: 56px;
+
+    &._active {
+      .tab-bar__circle-back {
+        display: block;
+      }
+      .tab-bar__circle-wrapper {
+        background: var(--orange-linear);
+        color: white;
+        filter: drop-shadow(0px 2px 6px rgba(0, 0, 0, 0.15))
+          drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      }
+    }
+  }
+  &__circle-wrapper {
+    @include flex-center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--d-stroke);
+    background-color: var(--bg);
+    border-radius: 50%;
+    z-index: 1;
+  }
+  &__circle-back {
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    &:first-child {
+      inset: -2px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 87, 15, 0.24) 0%,
+        rgba(255, 130, 20, 0.24) 50%,
+        rgba(255, 166, 0, 0.24) 100%
+      );
+    }
+    &:nth-child(2) {
+      inset: -4px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 87, 15, 0.24) 0%,
+        rgba(255, 130, 20, 0.24) 50%,
+        rgba(255, 166, 0, 0.24) 100%
+      );
+    }
+    &:nth-child(3) {
+      inset: -6px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 87, 15, 0.48) 0%,
+        rgba(255, 130, 20, 0.48) 50%,
+        rgba(255, 166, 0, 0.48) 100%
+      );
+      filter: blur(4px);
+    }
+  }
+  &__circle-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    flex: 1;
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+
+    &._active {
+      color: var(--orange);
+    }
+  }
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+}

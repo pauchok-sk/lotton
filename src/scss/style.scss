@@ -9,11 +9,19 @@
 
 @import "./libs/bootstrap.min";
 
+// features
+@import "./features/game-card";
+
+// widgets
+@import "./widgets/tab-bar";
+
 // ui
 @import "./ui/button";
 @import "./ui/list";
 
 // components
 @import "./components/header";
+
+@import "./components/games";
 
 @import "./components/footer";
