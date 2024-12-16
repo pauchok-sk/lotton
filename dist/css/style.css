@@ -6759,11 +6759,6 @@ fieldset:disabled .btn {
   right: 0;
   left: 0;
   z-index: 100;
-  position: fixed;
-  border-radius: 24px 24px 0 0;
-  background-color: var(--bg);
-  border: 1px solid var(--d-stroke);
-  padding: 8px;
   -webkit-filter: drop-shadow(0 -8px 20px rgba(0, 0, 0, .25));
   filter: drop-shadow(0 -8px 20px rgba(0, 0, 0, .25))
 }
@@ -6778,11 +6773,37 @@ fieldset:disabled .btn {
   z-index: 50
 }
 .tab-bar__nav {
-  position: relative
+  position: relative;
+  padding: 8px;
+  z-index: 1
+}
+.tab-bar__nav::after,
+.tab-bar__nav::before {
+  position: absolute;
+  content: "";
+  z-index: -1;
+  background-color: var(--bg);
+  border-top: 1px solid var(--d-stroke);
+  border-bottom: 1px solid var(--d-stroke);
+  top: 0;
+  height: 100%;
+  width: calc(50% - 60px)
+}
+.tab-bar__nav::before {
+  left: 0
+}
+.tab-bar__nav::after {
+  right: 0
 }
 .tab-bar__nav a {
   color: var(--light);
   text-decoration: none
+}
+.tab-bar__frame {
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 60px);
+  z-index: -1
 }
 .tab-bar__circle {
   display: block;
