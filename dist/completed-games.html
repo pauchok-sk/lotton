@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241217013142">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241217131105">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -93,6 +93,32 @@
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
 							<span class="game-card__price">1 000 000 $</span>
+							<div class="game-card__time d-flex align-items-center gap-1">
+								<svg class="game-card__time-icon">
+									<use xlink:href="img/icons/icons.svg#icon-timer"></use>
+								</svg>
+								<span>12h:49m</span>
+							</div>
+						</div>
+						<div class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2">
+							<div class="game-card__body-item">
+								<span class="game-card__body-title">Чет</span>
+								<span class="game-card__body-content">36%</span>
+							</div>
+							<div class="game-card__body-item">
+								<span class="game-card__body-title">Всего ставок</span>
+								<span class="game-card__body-content">12 456</span>
+							</div>
+							<div class="game-card__body-item _primary-green">
+								<span class="game-card__body-title">Нечет</span>
+								<span class="game-card__body-content">67%</span>
+							</div>
+						</div>
+					</div>
+					<div data-bs-toggle="modal" data-bs-target="#modal-info-current" class="game-card p-2">
+						<div class="d-flex align-items-center justify-content-between gap-2">
+							<span class="game-card__number">№123456</span>
+							<span class="game-card__price">zero</span>
 							<div class="game-card__time d-flex align-items-center gap-1">
 								<svg class="game-card__time-icon">
 									<use xlink:href="img/icons/icons.svg#icon-timer"></use>
@@ -379,7 +405,7 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20241217013142"></script>
+	<script src="js/app.min.js?_v=20241217131105"></script>
 </body>
 
 </html>

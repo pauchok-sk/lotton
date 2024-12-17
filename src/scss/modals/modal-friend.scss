@@ -1,0 +1,28 @@
+.modal-friend {
+  &__list {
+    margin-bottom: 32px !important;
+  }
+  &__item {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+    p {
+      margin: 0;
+    }
+  }
+  &__item-icon {
+    width: 20px;
+    height: 20px;
+  }
+  &__rating {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    color: white;
+  }
+  &__share {
+    width: 100%;
+  }
+}

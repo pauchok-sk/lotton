@@ -28,6 +28,7 @@
   border-radius: 100px;
   min-height: 40px;
   width: 100%;
+  text-decoration: none;
 
   font-size: 14px;
   font-weight: 700;
@@ -36,6 +37,16 @@
   &._primary {
     color: var(--bg);
     background: var(--orange-linear);
+  }
+  &._simple {
+    color: var(--orange);
+    background: var(--d-stroke);
+  }
+  &._green {
+    background-color: var(--green);
+  }
+  &._red {
+    background-color: var(--red);
   }
 
   &:disabled {

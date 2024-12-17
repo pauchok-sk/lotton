@@ -9,5 +9,7 @@
 
 .main {
   padding-top: 73px;
-  padding-bottom: 110px;
+  &._bottom {
+    padding-bottom: 110px;
+  }
 }

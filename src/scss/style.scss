@@ -12,11 +12,13 @@
 // modals
 @import "./modals/modal-bet";
 @import "./modals/modal-info";
+@import "./modals/modal-friend";
 
 // features
 @import "./features/game-card";
 @import "./features/bet";
 @import "./features/user-card";
+@import "./features/transaction";
 
 // widgets
 @import "./widgets/tab-bar";
@@ -29,11 +31,15 @@
 @import "./ui/title";
 @import "./ui/filters";
 @import "./ui/tab";
+@import "./ui/statistic";
 
 // components
 @import "./components/header";
 @import "./components/header-prev";
 
 @import "./components/my-bets";
+@import "./components/friends";
+@import "./components/profile";
+@import "./components/balance";
 
 @import "./components/footer";

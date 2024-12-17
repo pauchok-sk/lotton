@@ -1,0 +1,46 @@
+.friends {
+  &__head {
+    border-radius: 20px;
+    border: 1px solid var(--d-stroke-2);
+  }
+  &__bets-title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__bets-time {
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__head-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__head-value {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+  &__head-btn {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    min-height: 32px;
+    max-width: 120px;
+    margin: 0 auto;
+    font-weight: 400;
+  }
+  &__friend-add {
+    max-width: 190px;
+  }
+  &__invite-content {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+}

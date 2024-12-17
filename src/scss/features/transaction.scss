@@ -1,0 +1,38 @@
+.transaction {
+  border: 1px solid var(--green);
+  background-color: var(--d-green-12);
+  border-radius: 20px;
+  color: var(--light);
+
+  &._take {
+    border: 1px solid var(--d-stroke-2);
+    background-color: var(--d-white-04);
+    .transaction__price {
+      color: var(--red);
+    }
+  }
+
+  &__number {
+    padding: 4px 8px;
+    border-radius: 20px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    background-color: var(--d-white-04);
+  }
+  &__number-icon {
+    width: 12px;
+    height: 12px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+  &__price {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--green);
+  }
+}

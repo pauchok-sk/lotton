@@ -194,7 +194,9 @@ body {
   color: #fff
 }
 .main {
-  padding-top: 73px;
+  padding-top: 73px
+}
+.main._bottom {
   padding-bottom: 110px
 }
 .container {
@@ -6672,6 +6674,32 @@ fieldset:disabled .btn {
   line-height: 24px;
   letter-spacing: -.5px
 }
+.modal-friend__list {
+  margin-bottom: 32px!important
+}
+.modal-friend__item {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .1px;
+  color: var(--light)
+}
+.modal-friend__item p {
+  margin: 0
+}
+.modal-friend__item-icon {
+  width: 20px;
+  height: 20px
+}
+.modal-friend__rating {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px;
+  color: #fff
+}
+.modal-friend__share {
+  width: 100%
+}
 .game-card {
   border-radius: 20px;
   background-color: var(--d-white-08);
@@ -6843,6 +6871,7 @@ fieldset:disabled .btn {
 .user-card {
   background-color: var(--d-white-08);
   border: 1px solid var(--d-stroke-2);
+  min-height: 56px;
   border-radius: 20px;
   text-decoration: none;
   padding: 11px 24px 11px 20px;
@@ -6862,6 +6891,55 @@ fieldset:disabled .btn {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: .5px;
+  color: var(--green)
+}
+.user-card__rating {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px
+}
+.user-card__icon {
+  width: 16px;
+  height: 16px;
+  margin: 0
+}
+.transaction {
+  border: 1px solid var(--green);
+  background-color: var(--d-green-12);
+  border-radius: 20px;
+  color: var(--light)
+}
+.transaction._take {
+  border: 1px solid var(--d-stroke-2);
+  background-color: var(--d-white-04)
+}
+.transaction._take .transaction__price {
+  color: var(--red)
+}
+.transaction__number {
+  padding: 4px 8px;
+  border-radius: 20px;
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  background-color: var(--d-white-04)
+}
+.transaction__number-icon {
+  width: 12px;
+  height: 12px
+}
+.transaction__title {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px
+}
+.transaction__price {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
   color: var(--green)
 }
 .tab-bar {
@@ -7020,6 +7098,7 @@ fieldset:disabled .btn {
   border-radius: 100px;
   min-height: 40px;
   width: 100%;
+  text-decoration: none;
   font-size: 14px;
   font-weight: 700;
   line-height: 20px
@@ -7027,6 +7106,16 @@ fieldset:disabled .btn {
 .btn-main._primary {
   color: var(--bg);
   background: var(--orange-linear)
+}
+.btn-main._simple {
+  color: var(--orange);
+  background: var(--d-stroke)
+}
+.btn-main._green {
+  background-color: var(--green)
+}
+.btn-main._red {
+  background-color: var(--red)
 }
 .btn-main:disabled {
   pointer-events: none;
@@ -7061,7 +7150,8 @@ fieldset:disabled .btn {
 .modal-content {
   border-radius: 28px 28px 0 0;
   padding: 32px 16px!important;
-  background-color: var(--bg)
+  background-color: var(--bg);
+  border: none
 }
 .modal__title {
   font-size: 24px;
@@ -7254,6 +7344,58 @@ fieldset:disabled .btn {
 .tab._active {
   display: block
 }
+.statistic__item {
+  min-height: 88px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 20px;
+  border: 1px solid var(--d-stroke-2);
+  padding: 10px 12px;
+  flex: 0 1 calc(50% - 4px)
+}
+.statistic__item:first-child {
+  flex-basis: 100%;
+  align-items: center;
+  text-align: center
+}
+.statistic__item._win {
+  border-color: var(--green);
+  background-color: var(--d-green-12)
+}
+.statistic__item._win .statistic__item-value {
+  color: var(--green)
+}
+.statistic__item._loss {
+  border-color: var(--red);
+  background-color: var(--d-red-12)
+}
+.statistic__item._loss .statistic__item-value {
+  color: var(--red)
+}
+.statistic__item-title {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.statistic__item-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -.5px
+}
+.statistic__item-price {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -.5px;
+  color: var(--green)
+}
+.statistic__item-icon {
+  width: 24px;
+  height: 24px
+}
 .header {
   position: fixed;
   border-bottom: 1px solid var(--d-stroke);
@@ -7334,6 +7476,117 @@ fieldset:disabled .btn {
 }
 .my-bets__tab._active {
   display: flex!important
+}
+.friends__head {
+  border-radius: 20px;
+  border: 1px solid var(--d-stroke-2)
+}
+.friends__bets-title {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.friends__bets-time {
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.friends__head-icon {
+  width: 24px;
+  height: 24px
+}
+.friends__head-value {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -.5px
+}
+.friends__head-btn {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  min-height: 32px;
+  max-width: 120px;
+  margin: 0 auto;
+  font-weight: 400
+}
+.friends__friend-add {
+  max-width: 190px
+}
+.friends__invite-content {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.profile__avatar {
+  width: 120px
+}
+.profile__id {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.profile__settings {
+  margin-top: 40px
+}
+.profile__settings-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--light)
+}
+.profile__setting {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid var(--d-stroke)
+}
+.profile__setting-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px
+}
+.profile__setting-content {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light);
+  margin: 0
+}
+.profile__setting-icon {
+  width: 24px;
+  height: 24px
+}
+.balance__head {
+  padding: 20px 20px 24px 20px;
+  border: 1px solid var(--d-stroke);
+  background-color: var(--d-white-04);
+  border-radius: 20px
+}
+.balance__head-icon {
+  width: 24px;
+  height: 24px
+}
+.balance__head-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px;
+  color: var(--light)
+}
+.balance__price {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -.5px;
+  color: var(--green);
+  text-align: center
 }
 @media (min-width:576px) {
   .container,

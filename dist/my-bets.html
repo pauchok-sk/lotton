@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241217013142">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241217131105">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -38,7 +38,7 @@
 		</div>
 	</header>
 
-	<main class="main">
+	<main class="main _bottom">
 
 		<section class="my-bets">
 			<div class="container tab-container">
@@ -246,11 +246,205 @@
 						</svg>
 					</button>
 				</div>
-				<div class="filters d-flex mb-5">
-					<button data-tab="all" class="btn-tab filters__btn _active">За все время</button>
+				<div class="filters d-flex mb-4">
+					<button data-tab="all" class="btn-tab filters__btn _active">
+						За все время
+					</button>
 					<button data-tab="day" class="btn-tab filters__btn">День</button>
 					<button data-tab="month" class="btn-tab filters__btn">Месяц</button>
 					<button data-tab="year" class="btn-tab filters__btn">Год</button>
+				</div>
+				<div data-tab="all" class="tab _active">
+					<div class="statisti d-flex flex-wrap gap-2">
+						<div class="statistic__item">
+							<span class="statistic__item-title">Количество ставок всего</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item _win">
+							<span class="statistic__item-title">Из них <br />
+								выиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item _loss">
+							<span class="statistic__item-title">Из них <br />
+								проиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								ставок</span>
+							<span class="statistic__item-price">2 145 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								выигрышей</span>
+							<span class="statistic__item-price">2 267 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов получено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">560</span>
+							</div>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов потрачено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">330</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-tab="day" class="tab">
+					<div class="statisti d-flex flex-wrap gap-2">
+						<div class="statistic__item">
+							<span class="statistic__item-title">Количество ставок всего</span>
+							<span class="statistic__item-value">213</span>
+						</div>
+
+						<div class="statistic__item _win">
+							<span class="statistic__item-title">Из них <br />
+								выиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item _loss">
+							<span class="statistic__item-title">Из них <br />
+								проиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								ставок</span>
+							<span class="statistic__item-price">2 145 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								выигрышей</span>
+							<span class="statistic__item-price">2 267 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов получено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">560</span>
+							</div>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов потрачено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">330</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-tab="month" class="tab">
+					<div class="statisti d-flex flex-wrap gap-2">
+						<div class="statistic__item">
+							<span class="statistic__item-title">Количество ставок всего</span>
+							<span class="statistic__item-value">214</span>
+						</div>
+
+						<div class="statistic__item _win">
+							<span class="statistic__item-title">Из них <br />
+								выиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item _loss">
+							<span class="statistic__item-title">Из них <br />
+								проиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								ставок</span>
+							<span class="statistic__item-price">2 145 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								выигрышей</span>
+							<span class="statistic__item-price">2 267 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов получено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">560</span>
+							</div>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов потрачено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">330</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div data-tab="year" class="tab">
+					<div class="statisti d-flex flex-wrap gap-2">
+						<div class="statistic__item">
+							<span class="statistic__item-title">Количество ставок всего</span>
+							<span class="statistic__item-value">215</span>
+						</div>
+
+						<div class="statistic__item _win">
+							<span class="statistic__item-title">Из них <br />
+								выиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item _loss">
+							<span class="statistic__item-title">Из них <br />
+								проиграно</span>
+							<span class="statistic__item-value">212</span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								ставок</span>
+							<span class="statistic__item-price">2 145 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Общая сумма <br />
+								выигрышей</span>
+							<span class="statistic__item-price">2 267 $ </span>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов получено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">560</span>
+							</div>
+						</div>
+
+						<div class="statistic__item">
+							<span class="statistic__item-title">Всего бонусов потрачено</span>
+							<div class="d-flex align-items-center gap-1">
+								<img src="img/star.svg" alt="icon" class="statistic__item-icon" />
+								<span class="statistic__item-value">330</span>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -368,7 +562,7 @@
 		</nav>
 	</div>
 
-	<script src="js/app.min.js?_v=20241217013142"></script>
+	<script src="js/app.min.js?_v=20241217131105"></script>
 </body>
 
 </html>

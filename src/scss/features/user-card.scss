@@ -1,6 +1,7 @@
 .user-card {
   background-color: var(--d-white-08);
   border: 1px solid var(--d-stroke-2);
+  min-height: 56px;
   border-radius: 20px;
   text-decoration: none;
   padding: 11px 24px 11px 20px;
@@ -20,5 +21,19 @@
     line-height: 16px;
     letter-spacing: 0.5px;
     color: var(--green);
+  }
+  &__rating {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__icon {
+    width: 16px;
+    height: 16px;
+    margin: 0;
   }
 }

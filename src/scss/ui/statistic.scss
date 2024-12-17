@@ -1,0 +1,58 @@
+.statistic {
+  &__item {
+    min-height: 88px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid var(--d-stroke-2);
+    padding: 10px 12px;
+
+    flex: 0 1 calc(50% - 4px);
+    &:first-child {
+      flex-basis: 100%;
+      align-items: center;
+      text-align: center;
+    }
+
+    &._win {
+      border-color: var(--green);
+      background-color: var(--d-green-12);
+
+      .statistic__item-value {
+        color: var(--green);
+      }
+    }
+    &._loss {
+      border-color: var(--red);
+      background-color: var(--d-red-12);
+
+      .statistic__item-value {
+        color: var(--red);
+      }
+    }
+  }
+  &__item-title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__item-value {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+  &__item-price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: var(--green);
+  }
+  &__item-icon {
+    width: 24px;
+    height: 24px;
+  }
+}
