@@ -1,39 +1,31 @@
-.profile {
-  &__avatar {
-    width: 120px;
-  }
-  &__id {
-    font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
-    letter-spacing: 0.5px;
-    color: var(--light);
-  }
+.settings {
+  margin-top: 40px;
   &__title {
+    margin: 0;
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
     color: var(--light);
   }
-  &__setting {
+  &__item {
     text-decoration: none;
     color: white;
     border-bottom: 1px solid var(--d-stroke);
   }
-  &__setting-title {
+  &__item-title {
     font-size: 18px;
     font-weight: 700;
     line-height: 24px;
     letter-spacing: -0.5px;
   }
-  &__setting-content {
+  &__item-content {
     font-size: 12px;
     line-height: 16px;
     letter-spacing: 0.5px;
     color: var(--light);
     margin: 0;
   }
-  &__setting-icon {
+  &__item-icon {
     width: 24px;
     height: 24px;
   }

@@ -7268,7 +7268,7 @@ fieldset:disabled .btn {
   background: url(../img/icon-error.svg) center/100% auto no-repeat;
   right: 8px
 }
-.input-control .input {
+.input {
   min-height: 56px;
   border-radius: 20px;
   border: 1px solid var(--d-stroke-2);
@@ -7282,13 +7282,17 @@ fieldset:disabled .btn {
   letter-spacing: .1px;
   padding-right: 40px
 }
-.input-control .input:focus {
+.input:focus {
   outline: 4px solid var(--purple-light)
 }
-.input-control .input:focus+label {
+.input:focus+label {
   color: var(--purple-light)
 }
-.input-control .input-title {
+.input._big {
+  min-height: 230px;
+  resize: none
+}
+.input-title {
   position: absolute;
   left: 16px;
   top: 0;
@@ -7302,7 +7306,7 @@ fieldset:disabled .btn {
   line-height: 16px;
   letter-spacing: .5px
 }
-.input-control .input-icon {
+.input-icon {
   position: absolute;
   width: 24px;
   height: 24px;
@@ -7432,6 +7436,38 @@ fieldset:disabled .btn {
 .select option {
   background-color: var(--bg);
   color: #fff
+}
+.settings {
+  margin-top: 40px
+}
+.settings__title {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  color: var(--light)
+}
+.settings__item {
+  text-decoration: none;
+  color: #fff;
+  border-bottom: 1px solid var(--d-stroke)
+}
+.settings__item-title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px
+}
+.settings__item-content {
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light);
+  margin: 0
+}
+.settings__item-icon {
+  width: 24px;
+  height: 24px
 }
 .header {
   position: fixed;
@@ -7568,10 +7604,7 @@ fieldset:disabled .btn {
   letter-spacing: .5px;
   color: var(--light)
 }
-.profile__settings {
-  margin-top: 40px
-}
-.profile__settings-title {
+.profile__title {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
@@ -7624,6 +7657,26 @@ fieldset:disabled .btn {
   letter-spacing: -.5px;
   color: var(--green);
   text-align: center
+}
+.balance__bonuses {
+  display: block;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 56px;
+  letter-spacing: -.5px;
+  color: var(--orange);
+  text-align: center
+}
+.manual__title {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: -.5px
+}
+.manual__content {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .1px
 }
 @media (min-width:576px) {
   .container,
