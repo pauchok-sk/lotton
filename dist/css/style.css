@@ -7678,6 +7678,36 @@ fieldset:disabled .btn {
   line-height: 24px;
   letter-spacing: .1px
 }
+.notifications__item {
+  padding: 8px 14px;
+  border-radius: 20px;
+  border: 1px solid var(--d-stroke-2);
+  background-color: var(--d-white-08)
+}
+.notifications__item-time {
+  padding: 4px 8px;
+  border-radius: 20px;
+  background-color: var(--d-white-04);
+  font-size: 10px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
+.notifications__time-icon {
+  width: 12px;
+  height: 12px
+}
+.notifications__point {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--red)
+}
+.notifications__item-content {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .1px
+}
 @media (min-width:576px) {
   .container,
   .container-sm {
