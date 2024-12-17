@@ -1,4 +1,4 @@
-<div class="modal fade show" style="display: block;" id="modal-invite" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
+<div class="modal fade" id="modal-invite" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content p-4">
 			<div class="d-flex align-items-center gap-2 mb-4">
@@ -19,12 +19,16 @@
 				</li>
 			</ul>
 			<div class="input-control">
-				<input type="text" class="input" id="friend-link" value="https://t.me/link" />
-				<label for="bet-money" class="input-title">Кол-во инвайтов</label>
-				<svg data-copy="https://t.me/link" class="input-icon">
-					<use xlink:href="img/icons/icons.svg#icon-copy"></use>
-				</svg>
+				<select name="Кол-во инвайтов" id="invite-number" class="select">
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5</option>
+				</select>
+				<label for="invite-number" class="input-title">Кол-во инвайтов</label>
 			</div>
+			<p class="modal-friend__subcontent mt-1">Вам доступно максимум 10 инвайтов</p>
 			<a href="#" class="btn-main _primary modal-friend__share mt-4">
 				<svg class="btn-main__icon">
 					<use xlink:href="img/icons/icons.svg#icon-share"></use>

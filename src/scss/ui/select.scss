@@ -1,0 +1,34 @@
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  border-radius: 20px;
+  border: 1px solid var(--d-stroke-2);
+  padding: 4px 16px;
+  background-color: transparent;
+  outline: none;
+  width: 100%;
+
+  color: var(--light);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  padding-right: 40px;
+
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url('@img/triangle.svg') center right 4px / 24px 24px no-repeat;
+
+  &:focus {
+    outline: 4px solid var(--purple-light);
+    & + label {
+      color: var(--purple-light);
+    }
+  }
+
+  option {
+    background-color: var(--bg);
+    color: white;
+  }
+}

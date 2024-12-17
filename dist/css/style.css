@@ -6700,6 +6700,13 @@ fieldset:disabled .btn {
 .modal-friend__share {
   width: 100%
 }
+.modal-friend__subcontent {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: .5px;
+  color: var(--light)
+}
 .game-card {
   border-radius: 20px;
   background-color: var(--d-white-08);
@@ -7395,6 +7402,36 @@ fieldset:disabled .btn {
 .statistic__item-icon {
   width: 24px;
   height: 24px
+}
+.select {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-height: 56px;
+  border-radius: 20px;
+  border: 1px solid var(--d-stroke-2);
+  padding: 4px 16px;
+  background-color: rgba(0,0,0,0);
+  outline: 0;
+  width: 100%;
+  color: var(--light);
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: .1px;
+  padding-right: 40px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background: url(../img/triangle.svg) center right 4px/24px 24px no-repeat
+}
+.select:focus {
+  outline: 4px solid var(--purple-light)
+}
+.select:focus+label {
+  color: var(--purple-light)
+}
+.select option {
+  background-color: var(--bg);
+  color: #fff
 }
 .header {
   position: fixed;
