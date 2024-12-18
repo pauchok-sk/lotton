@@ -1,28 +1,37 @@
 :root {
-  --bg: #0F111C;
-  --d-stroke: #2A2D3D;
-  --d-stroke-2: #4D5060;
+  --bg: #0f111c;
+  --d-stroke: #2a2d3d;
+  --d-stroke-2: #4d5060;
 
-  --mirage: #181A25;
-  --d-icons: #4D5974;
-  --light: #BFBDCA;
+  --mirage: #181a25;
+  --d-icons: #4d5974;
+  --light: #bfbdca;
+  --light-2: #cac4d0;
 
-  --red: #FF3125;
-  --green: #46E044;
-  --purple: #771BEC;
-  --orange: #FF9500;
+  --red: #ff3125;
+  --green: #46e044;
+  --purple: #771bec;
+  --orange: #ff9500;
+  --orange-dark: #ff570f;
 
-  --red-light: #F2B8B5;
-  --purple-light: #D0BCFF;
+  --dark-outline: #938F99;
+
+  --red-light: #f2b8b5;
+  --purple-light: #d0bcff;
 
   --d-white-08: rgba(255, 255, 255, 0.08);
   --d-white-04: rgba(255, 255, 255, 0.04);
-  --d-white-02: rgba(255, 255, 255, 0.20);
+  --d-white-02: rgba(255, 255, 255, 0.2);
 
   --d-red-12: rgba(255, 49, 37, 0.12);
   --d-green-12: rgba(70, 224, 68, 0.12);
 
   --d-purple-12: rgba(119, 27, 236, 0.12);
 
-  --orange-linear: linear-gradient(180deg, #ff570f 0%, #ff8214 50%, #ffa600 100%);;
+  --orange-linear: linear-gradient(
+    180deg,
+    #ff570f 0%,
+    #ff8214 50%,
+    #ffa600 100%
+  );
 }

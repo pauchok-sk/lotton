@@ -14,6 +14,17 @@
   background-color: var(--mirage);
   color: var(--d-icons);
 
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease;
+
+  @include hover {
+    color: var(--light);
+    background-color: var(--d-white-08);
+    border-color: var(--d-stroke-2);
+  }
+
   &__icon {
     width: 30px;
     height: 30px;
@@ -22,6 +33,7 @@
 
 .btn-main {
   @include flex-center;
+  position: relative;
   gap: 8px;
   cursor: pointer;
   border: none;
@@ -29,14 +41,49 @@
   min-height: 40px;
   width: 100%;
   text-decoration: none;
+  overflow: hidden;
 
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
 
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+  z-index: 1;
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    inset: 0;
+    background-color: var(--bg);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    z-index: -1;
+  }
+  @include hover {
+    &::before {
+      opacity: 0.2;
+    }
+  }
+
   &._primary {
     color: var(--bg);
-    background: var(--orange-linear);
+    &::before {
+      opacity: 1;
+      background: var(--orange-linear);
+    }
+    &::after {
+      opacity: 0;
+      background: var(--orange-dark);
+    }
+
+    @include hover {
+      &::before {
+        opacity: 0;
+      }
+      &::after {
+        opacity: 1;
+      }
+    }
   }
   &._simple {
     color: var(--orange);
@@ -48,10 +95,28 @@
   &._red {
     background-color: var(--red);
   }
+  &._stroke {
+    background-color: transparent;
+    border: 1px solid var(--dark-outline);
+    color: var(--dark-outline);
+    &::before {
+      display: none;
+    }
+
+    @include hover {
+      color: var(--orange);
+      border-color: var(--orange);
+    }
+  }
 
   &:disabled {
     pointer-events: none;
     background: var(--d-white-02);
+    color: var(--bg);
+    &::before,
+    &::after {
+      display: none;
+    }
   }
 
   &__icon {
@@ -60,9 +125,10 @@
   }
 }
 
-.btn-claer {
+.btn-clear {
   cursor: pointer;
   background: none;
   border: none;
   border-radius: 0;
+  padding: 0;
 }

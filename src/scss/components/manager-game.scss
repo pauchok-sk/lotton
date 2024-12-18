@@ -1,0 +1,129 @@
+.manager-game {
+  &__number {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__time {
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: var(--d-white-04);
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__time-icon {
+    width: 12px;
+    height: 12px;
+  }
+  &__status {
+    border-radius: 20px;
+    border: 1px solid var(--purple);
+    background-color: var(--d-purple-12);
+
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    text-align: center;
+
+    &._green {
+      border-color: var(--green);
+      background-color: var(--d-green-12);
+    }
+  }
+  &__head-subtitle {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--light);
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: var(--green);
+  }
+  &__line {
+    padding: 4px;
+    border-radius: 12px;
+    background-color: var(--d-white-04);
+  }
+  &__line-item {
+    padding-top: 2px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 0 1 64px;
+    text-align: center;
+    color: var(--light);
+
+    &._big {
+      flex-basis: 150px;
+    }
+    &._primary-green {
+      background-color: var(--green);
+      color: var(--bg);
+    }
+  }
+  &__line-title {
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+  }
+  &__line-content {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__line-icon {
+    width: 20px;
+    height: 20px;
+    &._min {
+      width: 16px;
+      height: 16px;
+    }
+  }
+  &__players {
+    border-top: 1px solid var(--d-stroke);
+  }
+  &__players-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+    margin: 0;
+  }
+  &__download {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--orange);
+    transition: color 0.2s ease;
+    text-decoration: none;
+    @include hover {
+      color: var(--light);
+    }
+  }
+  &__download-icon {
+    width: 18px;
+    height: 18px;
+  }
+  &__tab {
+    &._active {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+  }
+}

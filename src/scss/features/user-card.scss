@@ -6,10 +6,35 @@
   text-decoration: none;
   padding: 11px 24px 11px 20px;
   color: white;
+  transition: background-color 0.2s ease;
+  @include hover {
+    background-color: var(--d-white-04);
+  }
+
+  &._win {
+    border-color: var(--green);
+    background-color: var(--d-green-12);
+  }
+  &._loss {
+    border-color: var(--red);
+    background-color: var(--d-red-12);
+
+    .user-card__price {
+      color: var(--red);
+    }
+  }
+
   &__icon {
     width: 32px;
     height: 32px;
     margin-right: 8px;
+  }
+  &__id {
+    display: block;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
   }
   &__title {
     font-size: 14px;
@@ -31,9 +56,35 @@
     line-height: 16px;
     letter-spacing: 0.5px;
   }
-  &__icon {
-    width: 16px;
-    height: 16px;
-    margin: 0;
+  &__content {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    padding: 0 8px;
+    color: var(--light);
+  }
+  &__price {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--green);
+    padding: 0 8px;
+  }
+  &__del {
+    @include flex-center;
+    color: var(--d-icons);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--orange);
+    }
+  }
+  &__icon-del {
+    width: 24px;
+    height: 24px;
+  }
+  &__triangle {
+    width: 24px;
+    height: 24px;
+    color: var(--light);
   }
 }

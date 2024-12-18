@@ -6,7 +6,7 @@
 	<meta charset="UTF-8">
 	<meta name="format-detection" content="telephone=no">
 	<link rel="shortcut icon" href="favicon.ico">
-	<link rel="stylesheet" href="css/style.min.css?_v=20241217191027">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241218163000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
@@ -16,7 +16,9 @@
 			<nav class="d-flex align-items-center gap-2">
 				<a href="#" class="header__profile d-flex gap-2 align-items-center flex-fill">
 					<div class="btn-rect">
-						<img src="img/profile.svg" alt="icon" class="btn-rect__icon">
+						<svg class="btn-rect__icon">
+							<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+						</svg>
 					</div>
 					<span class="header__profile-name">@John_Doe</span>
 				</a>
@@ -83,11 +85,11 @@
 							<span>Сделать ставку</span>
 						</button>
 					</div>
-					<div class="game-card p-2 _done">
+					<div class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
 							<span class="game-card__price">1 000 000 $</span>
-							<div class="game-card__time d-flex align-items-center gap-1">
+							<div class="game-card__time d-flex align-items-center gap-1 _green">
 								<svg class="game-card__time-icon">
 									<use xlink:href="img/icons/icons.svg#icon-timer"></use>
 								</svg>
@@ -147,11 +149,11 @@
 							<span>Приём ставок окончен</span>
 						</div>
 					</div>
-					<div class="game-card p-2 _pending">
+					<div class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
 							<span class="game-card__price">1 000 000 $</span>
-							<div class="game-card__time d-flex align-items-center gap-1">
+							<div class="game-card__time d-flex align-items-center gap-1 _primary-green">
 								<svg class="game-card__time-icon">
 									<use xlink:href="img/icons/icons.svg#icon-hourglass"></use>
 								</svg>
@@ -185,7 +187,7 @@
 
 
 	</main>
-	<div class="modal fade" id="modal-bet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal" id="modal-bet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content p-4">
 				<div class="d-flex align-items-center gap-2 mb-4">
@@ -280,7 +282,7 @@
 		</nav>
 	</div>
 
-	<script src="js/app.min.js?_v=20241217191027"></script>
+	<script src="js/app.min.js?_v=20241218163000"></script>
 </body>
 
 </html>

@@ -16,12 +16,19 @@
     line-height: 20px;
     color: white;
   }
+  &__profile-status {
+    display: block;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
   &__rect-btn {
     padding: 8px;
     color: var(--light);
 
     font-size: 10px;
-    line-height: 16px; 
+    line-height: 16px;
     letter-spacing: 0.5px;
     text-decoration: none;
   }
@@ -41,5 +48,65 @@
     top: 12px;
     right: 10px;
     z-index: 1;
+  }
+  &__burger {
+    position: fixed;
+    padding: 30px 28px;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    max-width: 280px;
+    width: 100%;
+    border-radius: 0px 16px 16px 0px;
+    background-color: var(--bg);
+    border: 1px solid var(--d-stroke);
+    z-index: 100;
+    transform: translateX(-280px);
+    transition: transform .4s ease;
+    &._open {
+      transform: translateX(0);
+    }
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+  &__burger-title {
+    padding-bottom: 20px;
+    border-bottom: 2px solid var(--light-2);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__burger-list {
+  }
+  &__burger-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--d-icons);
+  }
+  &__burger-item-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__burger-item-status {
+    display: block;
+    font-size: 10px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+  }
+  &__burger-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 50;
+    background-color: rgba(0,0,0,0.32);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity .4s ease, visibility .4s ease;
+    &._active {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 }

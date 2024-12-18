@@ -1,0 +1,104 @@
+<section class="pt-3 pb-2">
+  <div class="container">
+    <div class="d-flex align-items-center justify-content-between mb-4">
+      <span class="manager-game__number">№123456</span>
+      <div class="manager-game__time d-flex align-items-center gap-1">
+        <svg class="manager-game__time-icon">
+          <use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+        </svg>
+        <span>12h:49m</span>
+      </div>
+    </div>
+    <div class="mb-3 d-flex flex-column align-items-center">
+      <h5 class="manager-game__head-subtitle">Призовой фонд</h5>
+      <span class="manager-game__price">1 000 000 $</span>
+    </div>
+    <div class="manager-game__line mb-2 d-flex gap-1">
+      <div class="manager-game__line-item">
+        <span class="manager-game__line-title">Чет</span>
+        <span class="manager-game__line-content">36%</span>
+      </div>
+      <div class="manager-game__line-item flex-fill">
+        <span class="manager-game__line-title">Всего ставок</span>
+        <span class="manager-game__line-content">12 456</span>
+      </div>
+      <div class="manager-game__line-item">
+        <span class="manager-game__line-title">Нечет</span>
+        <span class="manager-game__line-content">67%</span>
+      </div>
+    </div>
+    <div class="manager-game__line mb-5 d-flex justify-content-between gap-1">
+      <div class="manager-game__line-item _big">
+        <span class="manager-game__line-title"
+          >Бонус <br />
+          к призовому фонду</span
+        >
+        <div class="manager-game__line-content mt-1">
+          <span>100 000</span>
+          <svg class="manager-game__line-icon">
+            <use xlink:href="img/icons/icons.svg#icon-dollar"></use>
+          </svg>
+        </div>
+      </div>
+      <div class="manager-game__line-item _big">
+        <span class="manager-game__line-title"
+          >Дополнительные <br />
+          бонусы</span
+        >
+        <div class="manager-game__line-content mt-1">
+          <span>10</span>
+          <svg class="manager-game__line-icon">
+            <use xlink:href="img/icons/icons.svg#icon-star"></use>
+          </svg>
+        </div>
+      </div>
+    </div>
+    <div class="manager-game__players pt-4">
+      <div class="d-flex align-items-center justify-content-between mb-3">
+        <h5 class="manager-game__players-title">Игроки</h5>
+        <a
+          href="#"
+          download
+          class="manager-game__download d-flex align-items-center gap-2"
+        >
+          <svg class="manager-game__download-icon">
+            <use xlink:href="img/icons/icons.svg#icon-download"></use>
+          </svg>
+          <span>Сохранить</span>
+        </a>
+      </div>
+      <div class="d-flex flex-column gap-2">
+        <div class="user-card d-flex align-items-center gap-2">
+          <img src="@img/profile.svg" alt="icon" class="user-card__icon" />
+          <span class="user-card__title flex-fill">@UserName</span>
+          <span class="user-card__content">ЧЕТ</span>
+          <span class="user-card__price">10 $</span>
+          <button
+            data-bs-toggle="modal"
+            data-bs-target="#modal-cancel-bet"
+            class="btn-clear user-card__del"
+          >
+            <svg class="user-card__icon-del">
+              <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="user-card d-flex align-items-center gap-2">
+          <img src="@img/profile.svg" alt="icon" class="user-card__icon" />
+          <span class="user-card__title flex-fill">@UserName</span>
+          <span class="user-card__content">ЧЕТ</span>
+          <span class="user-card__price">10 $</span>
+          <button
+            class="btn-clear user-card__del"
+            data-bs-toggle="modal"
+            data-bs-target="#modal-cancel-bet"
+          >
+            <svg class="user-card__icon-del">
+              <use xlink:href="img/icons/icons.svg#icon-trash"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

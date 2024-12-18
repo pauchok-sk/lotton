@@ -1,0 +1,13 @@
+.manager-games {
+  &__date-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--d-icons);
+  }
+  &__date-value {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px; 
+    letter-spacing: 0.1px;
+  }
+}

@@ -1,0 +1,102 @@
+.new-game {
+  &__descr {
+    margin-top: 44px;
+  }
+  &__descr-title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__calendar {
+    .air-datepicker {
+      width: 100%;
+      border: none;
+      background-color: transparent;
+    }
+    .air-datepicker-body--day-name {
+      aspect-ratio: 1 / 1;
+
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.5px;
+
+      color: var(--light);
+    }
+    .air-datepicker-body--cells.-days- {
+      grid-auto-rows: auto !important;
+      grid-auto-rows: 1fr !important;
+      grid-row-gap: 4px;
+    }
+    .air-datepicker--content {
+      padding: 0 !important;
+    }
+    .air-datepicker-cell {
+      position: relative;
+      background: none !important;
+
+      font-size: 16px;
+      line-height: 24px;
+      letter-spacing: 0.1px;
+      color: var(--light);
+      z-index: 1;
+      aspect-ratio: 1 / 1;
+
+      &::before {
+        position: absolute;
+        content: "";
+        inset: 0;
+        background-color: var(--d-stroke);
+        display: none;
+        z-index: -1;
+      }
+      &.-in-range- {
+        color: white !important;
+        &::before {
+          display: block;
+        }
+      }
+      &.-selected-,
+      &.-range-to-,
+      &.-range-from- {
+        background: var(--d-stroke) !important;
+        overflow: hidden;
+        &::before {
+          display: block;
+          border-radius: 50%;
+          background-color: var(--purple);
+        }
+      }
+      &.-range-from- {
+        border-radius: 50% 0px 0px 50%;
+      }
+      &.-range-to- {
+        border-radius: 0px 50% 50% 0px;
+      }
+      &.-current- {
+        color: var(--light) !important;
+      }
+    }
+  }
+  &__calendar-head {
+    border-bottom: 1px solid var(--d-stroke);
+  }
+  &__calendar-subtitle {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+  }
+  &__date {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+  }
+  &__calendar-nav {
+    margin-top: 18px;
+    border-top: 1px solid var(--d-stroke);
+
+    .btn-main {
+      flex: 0 1 115px;
+    }
+  }
+}

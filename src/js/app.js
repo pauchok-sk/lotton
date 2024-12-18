@@ -3,7 +3,11 @@ import "./bootstrap.min.js"
 import spoller from "./files/spoller.js";
 import tab from "./files/tab.js";
 import copy from "./files/copy.js";
+import burger from "./files/burger.js";
+import date from "./files/date.js";
 
 spoller();
 tab();
 copy();
+burger();
+date();

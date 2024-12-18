@@ -1,20 +1,28 @@
 .modal {
+  opacity: 0;
+  transition: opacity 0.4s ease;
   &.show {
     display: flex !important;
     flex-direction: column;
     justify-content: flex-end;
+    opacity: 1;
   }
   &-dialog {
     margin: 0;
     width: 100%;
     max-height: calc(100vh - 10px);
     margin: 10px auto 0px auto;
+    transform: none !important;
   }
   &-content {
     border-radius: 28px 28px 0px 0px;
     padding: 32px 16px !important;
     background-color: var(--bg);
     border: none;
+    &._no-offset {
+      padding-left: 0 !important;
+      padding-right: 0 !important;
+    }
   }
 
   &__title {
@@ -104,5 +112,9 @@
 }
 .modal-backdrop {
   background-color: var(--d-stroke);
-  opacity: 0.72;
+  opacity: 0;
+  transition: opacity .4s ease !important;
+  &.show {
+    opacity: 0.72;
+  }
 }

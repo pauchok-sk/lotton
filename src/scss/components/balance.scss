@@ -34,4 +34,13 @@
     color: var(--orange);
     text-align: center;
   }
+  &__transactions {
+    margin-top: 40px;
+  }
+  &__transactions-title {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+  }
 }

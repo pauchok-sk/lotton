@@ -13,6 +13,8 @@
 @import "./modals/modal-bet";
 @import "./modals/modal-info";
 @import "./modals/modal-friend";
+@import "./modals/new-game";
+@import "./modals/cancel-bet";
 
 // features
 @import "./features/game-card";
@@ -46,5 +48,8 @@
 @import "./components/help";
 @import "./components/manual";
 @import "./components/notifications";
+@import "./components/manager-games";
+@import "./components/manager-game";
+@import "./components/players";
 
 @import "./components/footer";

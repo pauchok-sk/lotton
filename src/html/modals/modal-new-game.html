@@ -1,0 +1,87 @@
+<div
+  class="modal"
+  id="modal-new-game"
+  tabindex="-1"
+  aria-labelledby="exampleModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog tab-container">
+    <div class="modal-content _no-offset">
+      <div data-tab="new-game-info" class="tab px-3 _active">
+        <div class="d-flex align-items-center gap-2 mb-4">
+          <h5 class="title-l flex-fill">Новый розыгрыш</h5>
+          <button
+            data-bs-dismiss="modal"
+            aria-label="Close"
+            class="modal__close"
+          >
+            <svg class="modal__close-icon">
+              <use xlink:href="img/icons/icons.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="input-control mb-5">
+          <input type="number" class="input" id="game-number" required />
+          <label for="game-number" class="input-title">Номер розыгрыша</label>
+        </div>
+        <div class="input-control">
+          <input type="number" class="input" id="game-bonus" required />
+          <label for="game-bonus" class="input-title"
+            >Бонус к призовому фонду</label
+          >
+          <svg class="input-icon">
+            <use xlink:href="img/icons/icons.svg#icon-dollar"></use>
+          </svg>
+        </div>
+        <p class="modal-bet__content mt-1 mb-4">
+          Дополнительная сумма к ставкам участников
+        </p>
+        <div class="input-control">
+          <input type="number" class="input" id="game-bonus-added" required />
+          <label for="game-bonus-added" class="input-title"
+            >Дополнительные бонусы</label
+          >
+          <svg class="input-icon">
+            <use xlink:href="img/icons/icons.svg#icon-star"></use>
+          </svg>
+        </div>
+        <p class="modal-bet__content mt-1 mb-4">
+          Дополнительно игрокам за ставку
+        </p>
+        <div class="new-game__descr">
+          <h5 class="new-game__descr-title mb-3">Описание розыгрыша</h5>
+          <textarea
+            name="Опсиание розыгрыша"
+            id="descr-game"
+            class="input _big"
+          ></textarea>
+        </div>
+        <button data-tab="new-game-calendar" class="btn-tab btn-main _primary mt-5">
+          <span>Создать новый розыгрыш</span>
+        </button>
+      </div>
+      <div data-tab="new-game-calendar" class="tab">
+        <div
+          class="new-game__calendar-head d-flex align-items-center justify-content-between p-3 mb-4"
+        >
+          <div>
+            <span class="new-game__calendar-subtitle mb-1"
+              >Начало - Конец периода</span
+            >
+            <div class="new-game__date" id="calendar-date"></div>
+          </div>
+          <button class="btn-rect" id="clear-calendar">
+            <svg class="btn-rect__icon">
+              <use xlink:href="img/icons/icons.svg#icon-reload"></use>
+            </svg>
+          </button>
+        </div>
+        <div class="new-game__calendar" id="calendar"></div>
+        <div class="d-flex justify-content-end gap-2 new-game__calendar-nav pt-2">
+          <button data-tab="new-game-info" class="btn-tab btn-main _stroke">Отменить</button>
+          <button class="btn-main _simple">Сохранить</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

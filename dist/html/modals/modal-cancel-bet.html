@@ -1,0 +1,28 @@
+<div class="modal" id="modal-cancel-bet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content p-4">
+			<div class="d-flex align-items-center gap-2 mb-4">
+				<h5 class="title-l flex-fill">Отмена ставки</h5>
+				<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+					<svg class="modal__close-icon">
+						<use xlink:href="img/icons/icons.svg#icon-close"></use>
+					</svg>
+				</button>
+			</div>
+			<div class="d-flex align-items-center flex-column gap-2 mb-4">
+				<img src="img/profile.svg" alt="image" class="cancel-bet__avatar" />
+				<h5 class="title-l">@John_Doe</h5>
+				<span class="cancel-bet__profile-id">#123456789</span>
+			</div>
+			<ul class="list d-flex gap-2 mb-4">
+				<li class="cancel-bet__info-item flex-fill">Чет</li>
+				<li class="cancel-bet__info-item flex-fill _green">10 $</li>
+			</ul>
+			<form action="#">
+				<h5 class="cancel-bet__form-title mb-3">Укажите причину отмены:</h5>
+				<textarea class="input _big cancel-bet__form-input"></textarea>
+				<button class="btn-main _red text-light mt-4">Отменить ставку</button>
+			</form>
+		</div>
+	</div>
+</div>

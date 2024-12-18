@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241218163000">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header-prev py-3">
+		<div class="container">
+			<nav class="d-flex align-items-center justify-content-between gap-2">
+				<a href="/" class="d-flex align-items-center gap-3 header-prev__btn">
+					<svg class="header-prev__arrow">
+						<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+					</svg>
+					<span>Розыгрыш</span>
+				</a>
+			</nav>
+		</div>
+	</header>
+
+	<main class="main _bottom-min">
+
+		<section class="pt-3 pb-2">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between mb-4">
+					<span class="manager-game__number">№123456</span>
+					<div class="manager-game__time d-flex align-items-center gap-1">
+						<svg class="manager-game__time-icon">
+							<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+						</svg>
+						<span>12h:49m</span>
+					</div>
+				</div>
+				<div class="manager-game__status mb-3 p-2 _green">Розыгрыш состоялся!</div>
+				<div class="mb-3 d-flex flex-column align-items-center">
+					<h5 class="manager-game__head-subtitle">Призовой фонд</h5>
+					<span class="manager-game__price">1 000 000 $</span>
+				</div>
+				<div class="manager-game__line mb-2 d-flex gap-1">
+					<div class="manager-game__line-item _primary-green">
+						<span class="manager-game__line-title">Чет</span>
+						<span class="manager-game__line-content">36%</span>
+					</div>
+					<div class="manager-game__line-item flex-fill">
+						<span class="manager-game__line-title">Всего ставок</span>
+						<div class="manager-game__line-content">
+							<span>12 456</span>
+							<svg class="manager-game__line-icon _min">
+								<use xlink:href="img/icons/icons.svg#icon-lock"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="manager-game__line-item">
+						<span class="manager-game__line-title">Нечет</span>
+						<span class="manager-game__line-content">67%</span>
+					</div>
+				</div>
+				<div class="manager-game__line mb-5 d-flex justify-content-between gap-1">
+					<div class="manager-game__line-item _big">
+						<span class="manager-game__line-title">Бонус <br />
+							к призовому фонду</span>
+						<div class="manager-game__line-content mt-1">
+							<span>100 000</span>
+							<svg class="manager-game__line-icon">
+								<use xlink:href="img/icons/icons.svg#icon-dollar"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="manager-game__line-item _big">
+						<span class="manager-game__line-title">Дополнительные <br />
+							бонусы</span>
+						<div class="manager-game__line-content mt-1">
+							<span>10</span>
+							<svg class="manager-game__line-icon">
+								<use xlink:href="img/icons/icons.svg#icon-star"></use>
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="manager-game__players pt-4 tab-container">
+					<div class="d-flex align-items-center justify-content-between mb-3">
+						<h5 class="manager-game__players-title">Игроки</h5>
+						<a href="#" download class="manager-game__download d-flex align-items-center gap-2">
+							<svg class="manager-game__download-icon">
+								<use xlink:href="img/icons/icons.svg#icon-download"></use>
+							</svg>
+							<span>Сохранить</span>
+						</a>
+					</div>
+					<div class="filters d-flex _big mb-3">
+						<button data-tab="all" class="btn-tab filters__btn _active">Все</button>
+						<button data-tab="win" class="btn-tab filters__btn">Выиграли</button>
+						<button data-tab="loss" class="btn-tab filters__btn">Проиграли</button>
+					</div>
+					<div data-tab="all" class="tab _active manager-game__tab">
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+					</div>
+					<div data-tab="win" class="tab manager-game__tab">
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _win">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+					</div>
+					<div data-tab="loss" class="tab manager-game__tab">
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+						<div class="user-card d-flex align-items-center gap-2 _loss">
+							<img src="img/profile.svg" alt="icon" class="user-card__icon" />
+							<span class="user-card__title flex-fill">@UserName</span>
+							<span class="user-card__content">ЧЕТ</span>
+							<span class="user-card__price">10 $</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<script src="js/app.min.js?_v=20241218163000"></script>
+</body>
+
+</html>
