@@ -7098,7 +7098,8 @@ fieldset:disabled .btn {
   border-radius: 20px;
   background-color: var(--d-white-08);
   border: 1px solid var(--d-stroke-2);
-  color: var(--light)
+  color: var(--light);
+  text-decoration: none
 }
 .game-card._done .game-card__time {
   color: var(--green)
@@ -8131,6 +8132,16 @@ fieldset:disabled .btn {
   width: 24px;
   height: 24px
 }
+.head-date__icon {
+  width: 18px;
+  height: 18px;
+  color: var(--d-icons)
+}
+.head-date__value {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px
+}
 .header {
   position: fixed;
   border-bottom: 1px solid var(--d-stroke);
@@ -8723,6 +8734,34 @@ fieldset:disabled .btn {
   line-height: 16px;
   letter-spacing: .5px;
   color: var(--green)
+}
+.admin-page__item {
+  text-decoration: none;
+  color: #fff;
+  border-radius: 20px;
+  padding: 16px;
+  border: 1px solid var(--d-stroke-2);
+  background-color: var(--d-white-04)
+}
+.admin-page__item-icon {
+  width: 24px;
+  height: 24px;
+  color: var(--orange)
+}
+.admin-page__item-title {
+  color: var(--orange)
+}
+.admin-page__item-content {
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: .1px;
+  color: var(--light)
+}
+.admin-page__number {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: -.5px
 }
 .air-datepicker-cell.-day-.-other-month-,
 .air-datepicker-cell.-year-.-other-decade- {

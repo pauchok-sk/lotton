@@ -1,0 +1,30 @@
+.admin-page {
+  &__item {
+    text-decoration: none;
+    color: white;
+    border-radius: 20px;
+    padding: 16px;
+    border: 1px solid var(--d-stroke-2);
+    background-color: var(--d-white-04);
+  }
+  &__item-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--orange);
+  }
+  &__item-title {
+    color: var(--orange);
+  }
+  &__item-content {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+  }
+  &__number {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+  }
+}

@@ -1,0 +1,12 @@
+.head-date {
+  &__icon {
+    width: 18px;
+    height: 18px;
+    color: var(--d-icons);
+  }
+  &__value {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+  }
+}
