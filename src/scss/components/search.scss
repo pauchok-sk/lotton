@@ -2,6 +2,9 @@
   &__head {
     border-bottom: 1px solid var(--d-stroke);
   }
+  &__form {
+    height: 100%;
+  }
   &__btn {
     @include flex-center;
     width: 48px;
@@ -49,6 +52,9 @@
     @include hover {
       color: var(--light);
     }
+  }
+  &__filters-container {
+    min-height: calc(100vh - 65px);
   }
   &__filters-item {
     padding-bottom: 32px;

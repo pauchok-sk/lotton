@@ -8657,6 +8657,9 @@ fieldset:disabled .btn {
 .search__head {
   border-bottom: 1px solid var(--d-stroke)
 }
+.search__form {
+  height: 100%
+}
 .search__btn {
   display: flex;
   align-items: center;
@@ -8707,6 +8710,9 @@ fieldset:disabled .btn {
   line-height: 20px;
   color: var(--orange);
   transition: color .2s ease
+}
+.search__filters-container {
+  min-height: calc(100vh - 65px)
 }
 .search__filters-item {
   padding-bottom: 32px;
