@@ -45,6 +45,10 @@
     }
   }
 
+  &._middle {
+    min-height: 80px;
+    resize: none;
+  }
   &._big {
     min-height: 230px;
     resize: none;
@@ -69,4 +73,64 @@
   width: 24px;
   height: 24px;
   right: 12px;
+}
+
+.input-check {
+  display: none;
+  &:checked + .label-check {
+    .label-check__circle {
+      color: var(--purple);
+      &::before {
+        display: block;
+      }
+    }
+  }
+}
+.label-check {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  gap: 12px;
+
+  @include hover {
+    .label-check__circle {
+      &::after {
+        inset: -8px;
+        background-color: var(--d-white-08);
+      }
+    }
+  }
+
+  &__circle {
+    @include flex-center;
+    position: relative;
+    width: 24px;
+    height: 24px;
+    color: var(--d-stroke-2);
+    border: 2px solid currentColor;
+    border-radius: 50%;
+
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &::before {
+      display: none;
+      width: 12px;
+      height: 12px;
+      background-color: currentColor;
+    }
+    &::after {
+      inset: 0;
+      transition:
+        inset 0.2s ease,
+        background-color 0.2s ease;
+    }
+  }
 }

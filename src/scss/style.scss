@@ -8,6 +8,7 @@
 @import "./base/config-container";
 
 @import "./libs/bootstrap.min";
+@import "./libs/nouislider";
 
 // modals
 @import "./modals/modal-bet";
@@ -21,6 +22,7 @@
 @import "./features/bet";
 @import "./features/user-card";
 @import "./features/transaction";
+@import "./features/balance-head";
 
 // widgets
 @import "./widgets/tab-bar";
@@ -51,5 +53,8 @@
 @import "./components/manager-games";
 @import "./components/manager-game";
 @import "./components/players";
+@import "./components/balance-app";
+@import "./components/transaction-page";
+@import "./components/search";
 
 @import "./components/footer";

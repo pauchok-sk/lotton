@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>pauchoo0k</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="stylesheet" href="css/style.min.css?_v=20241219134034">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body class="body">
+	<header class="header py-3">
+		<div class="container">
+			<div class="d-flex gap-2 align-items-center">
+				<button class="btn-rect" id="burger-btn">
+					<svg class="btn-rect__icon">
+						<use xlink:href="img/icons/icons.svg#icon-burger"></use>
+					</svg>
+				</button>
+				<div>
+					<span class="header__profile-name">@John_Doe</span>
+					<span class="header__profile-status">финансовый менеджер</span>
+				</div>
+			</div>
+			<div class="header__burger" id="burger">
+				<h5 class="header__burger-title mb-2">Профиль</h5>
+				<ul class="list header__burger-list">
+					<li>
+						<a href="#" class="d-flex align-items-center gap-2 py-3">
+							<svg class="header__burger-icon">
+								<use xlink:href="img/icons/icons.svg#icon-profile"></use>
+							</svg>
+							<div>
+								<span class="header__burger-item-title">UserName</span>
+								<span class="header__burger-item-status">финансовый менеджер</span>
+							</div>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="d-flex align-items-center gap-2 py-3">
+							<svg class="header__burger-icon">
+								<use xlink:href="img/icons/icons.svg#icon-logout"></use>
+							</svg>
+							<div>
+								<span class="header__burger-item-title">Выход</span>
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="header__burger-overlay" id="burger-overlay"></div>
+		</div>
+	</header>
+
+	<main class="main _bottom-min">
+
+		<section class="pt-3">
+			<div class="container">
+				<div class="d-flex flex-wrap gap-2 mb-4">
+					<div class="balance-head__item">
+						<div class="balance-head__title d-flex align-items-center gap-2 mb-3">
+							<img src="img/dollar.svg" alt="image" class="balance-head__icon" />
+							<span>Общий балланс приложения</span>
+						</div>
+						<span class="balance-head__value">1 120 000$</span>
+					</div>
+					<div class="balance-head__item">
+						<span class="balance-head__title mb-1"> Общий баланс игроков </span>
+						<span class="balance-head__value">1 012 025 $</span>
+					</div>
+					<div class="balance-head__item">
+						<span class="balance-head__title mb-1"> Незадействованный баланс </span>
+						<span class="balance-head__value">107 975 $ </span>
+					</div>
+				</div>
+				<div>
+					<h3 class="title-m mb-4">История транзакций</h3>
+					<div class="d-flex align-items-center justify-content-center gap-2 mb-3">
+						<svg class="balance-app__icon-calendar">
+							<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+						</svg>
+						<span class="balance-app__date">1 августа –31 августа</span>
+					</div>
+					<div class="filters d-flex _big mb-2">
+						<a href="#" class="filters__btn _active">Все</a>
+						<a href="#" class="filters__btn">Списание</a>
+						<a href="#" class="filters__btn">Пополнение</a>
+					</div>
+					<div class="filters d-flex _big mb-3">
+						<a href="#" class="filters__btn _active">Все</a>
+						<a href="#" class="filters__btn">Успешно</a>
+						<a href="#" class="filters__btn">Ошибка</a>
+					</div>
+					<div class="d-flex flex-column gap-2">
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Успешно</span>
+								</div>
+								<span class="transaction__price _green">+100$</span>
+							</div>
+						</a>
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2 _red">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-close"></use>
+									</svg>
+									<span>Ошибка</span>
+								</div>
+								<span class="transaction__price _red">-100$</span>
+							</div>
+						</a>
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Успешно</span>
+								</div>
+								<span class="transaction__price _green">+100$</span>
+							</div>
+						</a>
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2 _red">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-close"></use>
+									</svg>
+									<span>Ошибка</span>
+								</div>
+								<span class="transaction__price _red">-100$</span>
+							</div>
+						</a>
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-check"></use>
+									</svg>
+									<span>Успешно</span>
+								</div>
+								<span class="transaction__price _green">+100$</span>
+							</div>
+						</a>
+						<a href="#" class="transaction py-2">
+							<div class="d-flex align-items-center justify-content-between mx-2 mb-3">
+								<span class="transaction__number">TRANZ123456</span>
+								<div class="transaction__number d-flex align-items-center gap-1">
+									<svg class="transaction__number-icon">
+										<use xlink:href="img/icons/icons.svg#icon-calendar"></use>
+									</svg>
+									<span>12.09.2024 12:09</span>
+								</div>
+							</div>
+							<span class="transaction__title mb-2">@UserName</span>
+							<div class="d-flex align-items-center justify-content-between mx-3">
+								<div class="transaction__status d-flex align-items-center gap-2 _red">
+									<svg class="transaction__icon-status">
+										<use xlink:href="img/icons/icons.svg#icon-close"></use>
+									</svg>
+									<span>Ошибка</span>
+								</div>
+								<span class="transaction__price _red">-100$</span>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+	</main>
+	<div class="tab-bar__show"></div>
+	<div class="tab-bar _manager">
+		<nav class="tab-bar__nav d-flex align-items-end gap-2">
+			<a href="#" class="tab-bar__btn _active">
+				<svg class="tab-bar__icon">
+					<use xlink:href="img/icons/icons.svg#icon-ticket"></use>
+				</svg>
+				<span>Розыгрыши</span>
+			</a>
+			<a href="#" class="tab-bar__btn">
+				<svg class="tab-bar__icon">
+					<use xlink:href="img/icons/icons.svg#icon-friends"></use>
+				</svg>
+				<span>Игроки</span>
+			</a>
+		</nav>
+	</div>
+
+	<script src="js/app.min.js?_v=20241219134034"></script>
+</body>
+
+</html>

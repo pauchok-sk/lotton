@@ -5,6 +5,9 @@
 
   &._big {
     .filters__btn {
+      font-size: 16px;
+    }
+    .filters__label-check {
       font-size: 16px
     }
   }
@@ -12,20 +15,50 @@
   &__btn {
     @include flex-center;
     font-size: 14px;
-    line-height: 20px; 
+    line-height: 20px;
     letter-spacing: 0.1px;
     color: var(--light);
-    padding: 10px 12px;
+    padding: 10px 8px;
     border: none;
     flex: 1;
     white-space: nowrap;
     background-color: transparent;
-    transition: color .2s ease, background-color .2s ease;
+    text-decoration: none;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
 
     &._active {
       background-color: var(--purple);
       color: white;
     }
+
+    &:not(:last-child) {
+      border-right: 1px solid var(--d-stroke-2);
+    }
+  }
+  &__check {
+    display: none;
+    &:checked + label {
+      background-color: var(--purple);
+      color: white;
+    }
+  }
+  &__check-label {
+    @include flex-center;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+    padding: 10px 8px;
+    border: none;
+    flex: 1;
+    white-space: nowrap;
+    background-color: transparent;
+    text-decoration: none;
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease;
 
     &:not(:last-child) {
       border-right: 1px solid var(--d-stroke-2);

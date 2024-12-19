@@ -1,0 +1,62 @@
+.transaction-page {
+  &__id {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+  }
+  &__date {
+    padding: 4px 8px;
+    border-radius: 20px;
+    background-color: var(--d-white-04);
+
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__icon {
+    width: 12px;
+    height: 12px;
+  }
+  &__price-title {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 12px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    color: var(--light);
+  }
+  &__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: -0.5px;
+    color: var(--green);
+  }
+  &__status {
+    padding: 6px 8px;
+    border-radius: 12px;
+    background-color: var(--d-white-04);
+    width: fit-content;
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--light);
+  }
+  &__icon-status {
+    width: 18px;
+    height: 18px;
+  }
+  &__reason-title {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--light);
+  }
+  &__reason {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+  }
+}

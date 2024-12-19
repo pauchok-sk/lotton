@@ -1,15 +1,13 @@
 .transaction {
-  border: 1px solid var(--green);
-  background-color: var(--d-green-12);
+  border: 1px solid var(--d-stroke-2);
+  background-color: var(--d-white-04);
   border-radius: 20px;
   color: var(--light);
+  text-decoration: none;
 
-  &._take {
-    border: 1px solid var(--d-stroke-2);
-    background-color: var(--d-white-04);
-    .transaction__price {
-      color: var(--red);
-    }
+  &._success {
+    border: 1px solid var(--green);
+    background-color: var(--d-green-12);
   }
 
   &__number {
@@ -33,6 +31,38 @@
     font-size: 14px;
     font-weight: 700;
     line-height: 20px;
-    color: var(--green);
+    color: white;
+
+    &._green {
+      color: var(--green);
+    }
+    &._red {
+      color: var(--red);
+    }
+  }
+  &__status {
+    padding: 6px 16px 6px 8px;
+    border-radius: 12px;
+    background-color: var(--d-white-04);
+
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--light);
+
+    &._red {
+      color: var(--red);
+    }
+  }
+  &__title {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    display: block;
+    text-align: center;
+  }
+  &__icon-status {
+    width: 18px;
+    height: 18px;
   }
 }

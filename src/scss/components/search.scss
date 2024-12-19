@@ -1,0 +1,63 @@
+.search {
+  &__head {
+    border-bottom: 1px solid var(--d-stroke);
+  }
+  &__btn {
+    @include flex-center;
+    width: 48px;
+    height: 48px;
+    color: var(--d-icons);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--light);
+    }
+  }
+  &__btn-icon {
+    width: 24px;
+    height: 24px;
+  }
+  &__input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+
+    &::placeholder {
+      color: var(--light);
+    }
+  }
+  &__title {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.1px;
+    color: var(--light);
+    margin: 0;
+  }
+  &__btn-clear {
+    padding: 10px 12px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--orange);
+    transition: color 0.2s ease;
+    @include hover {
+      color: var(--light);
+    }
+  }
+  &__filters-item {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--d-stroke);
+  }
+  &__range-price {
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.5px;
+    color: var(--green);
+  }
+}

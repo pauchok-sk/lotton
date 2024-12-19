@@ -11,6 +11,8 @@
 <path d="M8 9H4V20H8V9Z" fill="currentColor"/>
 <path d="M20 13H16V20H20V13Z" fill="currentColor"/>
 <path d="M14 4H10V20H14V4Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 18 18" fill="none" id="icon-check" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.75012 12.1274L3.62262 8.99988L2.55762 10.0574L6.75012 14.2499L15.7501 5.24988L14.6926 4.19238L6.75012 12.1274Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-close" xmlns="http://www.w3.org/2000/svg">
 <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 19 18" fill="none" id="icon-coins" xmlns="http://www.w3.org/2000/svg">
@@ -29,6 +31,8 @@
 <path d="M12 5.66667H11.3333V4.33333C11.3333 2.49333 9.83996 1 7.99996 1C6.15996 1 4.66663 2.49333 4.66663 4.33333V5.66667H3.99996C3.26663 5.66667 2.66663 6.26667 2.66663 7V13.6667C2.66663 14.4 3.26663 15 3.99996 15H12C12.7333 15 13.3333 14.4 13.3333 13.6667V7C13.3333 6.26667 12.7333 5.66667 12 5.66667ZM5.99996 4.33333C5.99996 3.22667 6.89329 2.33333 7.99996 2.33333C9.10663 2.33333 9.99996 3.22667 9.99996 4.33333V5.66667H5.99996V4.33333ZM12 13.6667H3.99996V7H12V13.6667ZM7.99996 11.6667C8.73329 11.6667 9.33329 11.0667 9.33329 10.3333C9.33329 9.6 8.73329 9 7.99996 9C7.26663 9 6.66663 9.6 6.66663 10.3333C6.66663 11.0667 7.26663 11.6667 7.99996 11.6667Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-logout" xmlns="http://www.w3.org/2000/svg">
 <path d="M17 8L15.59 9.41L17.17 11H9V13H17.17L15.59 14.58L17 16L21 12L17 8ZM5 5H12V3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H12V19H5V5Z" fill="currentColor"/>
+</symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-pen" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M19.06 3.58988L20.41 4.93988C21.2 5.71988 21.2 6.98988 20.41 7.76988L7.18 20.9999H3V16.8199L13.4 6.40988L16.23 3.58988C17.01 2.80988 18.28 2.80988 19.06 3.58988ZM5 18.9999L6.41 19.0599L16.23 9.22988L14.82 7.81988L5 17.6399V18.9999Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 18 18" fill="none" id="icon-plus" xmlns="http://www.w3.org/2000/svg">
 <path d="M15 9.75H9.75V15H8.25V9.75H3V8.25H8.25V3H9.75V8.25H15V9.75Z" fill="currentColor"/>
 </symbol><symbol viewBox="0 0 24 24" fill="none" id="icon-points" xmlns="http://www.w3.org/2000/svg">
