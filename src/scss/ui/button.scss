@@ -28,6 +28,10 @@
   &__icon {
     width: 30px;
     height: 30px;
+    &._min {
+      width: 24px;
+      height: 24px;
+    }
   }
 }
 

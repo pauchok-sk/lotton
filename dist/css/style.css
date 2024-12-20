@@ -7422,7 +7422,7 @@ fieldset:disabled .btn {
   flex: 0 1 calc(50% - 4px)
 }
 .balance-head__item:first-child {
-  padding: 20px;
+  padding: 20px 20px 36px 20px;
   flex-basis: 100%
 }
 .balance-head__item:first-child .balance-head__title {
@@ -7587,7 +7587,8 @@ fieldset:disabled .btn {
   flex: 1;
   font-size: 10px;
   line-height: 16px;
-  letter-spacing: .5px
+  letter-spacing: .5px;
+  transition: color .2s ease
 }
 .tab-bar__btn._active {
   color: var(--orange)
@@ -7617,6 +7618,10 @@ fieldset:disabled .btn {
 .btn-rect__icon {
   width: 30px;
   height: 30px
+}
+.btn-rect__icon._min {
+  width: 24px;
+  height: 24px
 }
 .btn-main {
   display: flex;
@@ -14391,6 +14396,9 @@ fieldset:disabled .btn {
   .user-card__del:hover {
     color: var(--orange)
   }
+  .tab-bar__btn:hover {
+    color: var(--orange)
+  }
   .btn-rect:hover {
     color: var(--light);
     background-color: var(--d-white-08);
@@ -14428,6 +14436,9 @@ fieldset:disabled .btn {
     background-color: var(--d-white-04)
   }
   .user-card__del:active {
+    color: var(--orange)
+  }
+  .tab-bar__btn:active {
     color: var(--orange)
   }
   .btn-rect:active {

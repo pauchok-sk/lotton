@@ -1,0 +1,58 @@
+<section class="search">
+	<form action="#" class="search__form">
+		<div action="#" class="d-flex align-items-center gap-2 p-2 search__head">
+			<a href="#" class="search__btn">
+				<svg class="search__btn-icon">
+					<use xlink:href="img/icons/icons.svg#icon-arrow"></use>
+				</svg>
+			</a>
+			<h1 class="search__title flex-fill">Фильтр</h1>
+			<button class="btn-clear search__btn-clear">Сбросить</button>
+		</div>
+		<div class="container pb-2 pt-3 d-flex flex-column gap-2 search__filters-container">
+			<div class="d-flex flex-column gap-4 flex-fill">
+				<div class="search__filters-item">
+					<h3 class="title-m mb-4">Тип транзакции</h3>
+					<div class="d-flex flex-column gap-4">
+						<input type="radio" name="type-transaction" id="transaction-all" class="input-check" />
+						<label for="transaction-all" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Все</span>
+						</label>
+						<input type="radio" name="type-transaction" id="transaction-up" class="input-check" />
+						<label for="transaction-up" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Списание</span>
+						</label>
+						<input type="radio" name="type-transaction" id="transaction-down" class="input-check" />
+						<label for="transaction-down" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Пополнение</span>
+						</label>
+					</div>
+				</div>
+				<div class="search__filters-item">
+					<h3 class="title-m mb-4">Статус</h3>
+					<div class="d-flex flex-column gap-4">
+						<input type="radio" name="status-transaction" id="status-transaction-all" class="input-check" />
+						<label for="status-transaction-all" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Все</span>
+						</label>
+						<input type="radio" name="status-transaction" id="status-transaction-success" class="input-check" />
+						<label for="status-transaction-success" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Успешно</span>
+						</label>
+						<input type="radio" name="status-transaction" id="status-transaction-error" class="input-check" />
+						<label for="status-transaction-error" class="label-check">
+							<div class="label-check__circle"></div>
+							<span>Ошибка</span>
+						</label>
+					</div>
+				</div>
+			</div>
+			<button class="btn-main _primary align-self-end">Применить</button>
+		</div>
+	</form>
+</section>

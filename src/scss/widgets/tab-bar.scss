@@ -142,7 +142,12 @@
     line-height: 16px;
     letter-spacing: 0.5px;
 
+    transition: color .2s ease;
+
     &._active {
+      color: var(--orange);
+    }
+    @include hover {
       color: var(--orange);
     }
   }
