@@ -7131,6 +7131,9 @@ fieldset:disabled .btn {
   letter-spacing: -.5px;
   text-transform: uppercase
 }
+.game-card__price._light {
+  color: var(--light)
+}
 .game-card__time {
   padding: 4px 8px;
   border-radius: 20px;
@@ -7168,7 +7171,8 @@ fieldset:disabled .btn {
   flex: 1
 }
 .game-card__body-item._selected {
-  background-color: var(--purple)
+  background-color: var(--purple);
+  color: #fff
 }
 .game-card__body-item._green {
   color: var(--green)
@@ -7587,8 +7591,7 @@ fieldset:disabled .btn {
   flex: 1;
   font-size: 10px;
   line-height: 16px;
-  letter-spacing: .5px;
-  transition: color .2s ease
+  letter-spacing: .5px
 }
 .tab-bar__btn._active {
   color: var(--orange)
@@ -7612,8 +7615,7 @@ fieldset:disabled .btn {
   border-radius: 8px;
   border: 1px solid var(--d-stroke);
   background-color: var(--mirage);
-  color: var(--d-icons);
-  transition: background-color .2s ease,color .2s ease,border-color .2s ease
+  color: var(--d-icons)
 }
 .btn-rect__icon {
   width: 30px;
@@ -7639,7 +7641,6 @@ fieldset:disabled .btn {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
-  transition: color .2s ease,background-color .2s ease,border-color .2s ease;
   z-index: 1
 }
 .btn-main::after,
@@ -7649,7 +7650,6 @@ fieldset:disabled .btn {
   inset: 0;
   background-color: var(--bg);
   opacity: 0;
-  transition: opacity .2s ease;
   z-index: -1
 }
 .btn-main._primary {

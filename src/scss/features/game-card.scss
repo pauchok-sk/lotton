@@ -38,6 +38,10 @@
     line-height: 24px;
     letter-spacing: -0.5px;
     text-transform: uppercase;
+
+    &._light {
+      color: var(--light);
+    }
   }
   &__time {
     padding: 4px 8px;
@@ -79,6 +83,7 @@
 
     &._selected {
       background-color: var(--purple);
+      color: white;
     }
     &._green {
       color: var(--green);
