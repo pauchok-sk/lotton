@@ -63,6 +63,7 @@
     z-index: 100;
     transform: translateX(-280px);
     transition: transform .4s ease;
+    z-index: 100;
     &._open {
       transform: translateX(0);
     }
