@@ -7760,7 +7760,7 @@ fieldset:disabled .btn {
   flex-direction: column!important;
   justify-content: flex-end!important;
   width: 100%;
-  height: calc(100vh - 10px);
+  max-height: calc(100vh - 10px);
   margin: 10px auto 0 auto;
   -webkit-transform: none!important;
   transform: none!important
