@@ -55,6 +55,9 @@
           display: block;
         }
       }
+      &.-range-to-.-range-from- {
+        border-radius: 50% !important;
+      }
       &.-selected-,
       &.-range-to-,
       &.-range-from- {

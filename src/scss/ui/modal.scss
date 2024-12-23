@@ -3,8 +3,8 @@
   transition: opacity 0.4s ease;
   &.show {
     display: flex !important;
-    flex-direction: column;
-    justify-content: flex-end;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
     opacity: 1;
   }
   &-dialog {

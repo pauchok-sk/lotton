@@ -46,6 +46,7 @@
     line-height: 16px;
     letter-spacing: 0.5px;
     color: var(--green);
+    flex-shrink: 0;
 
     &._light {
       color: var(--light);
@@ -90,5 +91,6 @@
     width: 24px;
     height: 24px;
     color: var(--light);
+    flex-shrink: 0;
   }
 }

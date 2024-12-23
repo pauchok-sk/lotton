@@ -8,8 +8,8 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20241223193608" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20241223193608" />
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20241223211343" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241223211343" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -144,7 +144,7 @@
 							</div>
 						</div>
 					</div>
-					<div data-bs-toggle="modal" data-bs-target="#modal-info-current" class="game-card p-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-zero" class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<span class="game-card__number">№123456</span>
 							<span class="game-card__price">zero</span>
@@ -179,7 +179,7 @@
 	<div class="modal" id="modal-info" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content p-4">
-				<div class="d-flex align-items-center gap-2 mb-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
 					<h5 class="modal__title flex-fill">Розыгрыш</h5>
 					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
 						<svg class="modal__close-icon">
@@ -230,7 +230,7 @@
 	<div class="modal" id="modal-info-loss" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content p-4">
-				<div class="d-flex align-items-center gap-2 mb-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
 					<h5 class="modal__title flex-fill">Розыгрыш</h5>
 					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
 						<svg class="modal__close-icon">
@@ -290,7 +290,7 @@
 	<div class="modal" id="modal-info-win" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content p-4">
-				<div class="d-flex align-items-center gap-2 mb-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
 					<h5 class="modal__title flex-fill">Розыгрыш</h5>
 					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
 						<svg class="modal__close-icon">
@@ -351,7 +351,7 @@
 	<div class="modal" id="modal-info-current" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content p-4">
-				<div class="d-flex align-items-center gap-2 mb-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
 					<h5 class="modal__title flex-fill">Розыгрыш</h5>
 					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
 						<svg class="modal__close-icon">
@@ -408,7 +408,58 @@
 		</div>
 	</div>
 
-	<script src="js/app.min.js?_v=20241223193608"></script>
+	<div class="modal" id="modal-zero" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content p-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
+					<h5 class="modal__title flex-fill">Розыгрыш</h5>
+					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="d-flex align-items-center justify-content-between gap-2 mb-4">
+					<span class="title-l flex-fill">№123456</span>
+					<div class="modal__number">
+						<svg class="modal__number-icon">
+							<use xlink:href="img/icons/icons.svg#icon-timer"></use>
+						</svg>
+						<span>12.09.2024 12:09</span>
+					</div>
+				</div>
+				<div class="modal-info__price-info mb-4">
+					<span class="modal-info__price-title">Ставка сыграла</span>
+					<span class="modal-info__price">ZERO</span>
+				</div>
+				<div class="modal__info-bet d-flex mb-4">
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Чет</span>
+						<span class="modal__info-bet-value">36%</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Всего ставок</span>
+						<span class="modal__info-bet-value">12 456</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Нечет</span>
+						<span class="modal__info-bet-value">67%</span>
+					</div>
+				</div>
+				<div class="d-flex align-items-start gap-4">
+					<div class="flex-fill">
+						<span class="modal-info__hash-title">Хэш</span>
+						<p class="modal-info__hash">
+							fcad2f9fa968636b359f777e5afef3d9e641748e70c8269acf7d2f2217b7a708
+						</p>
+					</div>
+					<a href="#" class="modal-info__check-btn">Проверить</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js?_v=20241223211343"></script>
 </body>
 
 </html>

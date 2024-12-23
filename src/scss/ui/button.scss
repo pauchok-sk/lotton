@@ -14,6 +14,8 @@
   background-color: var(--mirage);
   color: var(--d-icons);
 
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+
   @include hover {
     color: var(--light);
     background-color: var(--d-white-08);
@@ -46,6 +48,8 @@
   font-weight: 700;
   line-height: 20px;
 
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+
   z-index: 1;
   &::before,
   &::after {
@@ -55,6 +59,7 @@
     background-color: var(--bg);
     opacity: 0;
     z-index: -1;
+    transition: opacity .2s ease;
   }
   @include hover {
     &::before {
@@ -87,9 +92,11 @@
     background: var(--d-stroke);
   }
   &._green {
+    color: var(--bg);
     background-color: var(--green);
   }
   &._red {
+    color: var(--bg);
     background-color: var(--red);
   }
   &._stroke {

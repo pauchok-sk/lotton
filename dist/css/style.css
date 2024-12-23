@@ -203,7 +203,7 @@ body {
   padding-bottom: 110px
 }
 .main._bottom-min {
-  padding-bottom: 80px
+  padding-bottom: 110px
 }
 .container {
   width: 100%;
@@ -7021,6 +7021,9 @@ fieldset:disabled .btn {
 .new-game__calendar .air-datepicker-cell.-in-range-::before {
   display: block
 }
+.new-game__calendar .air-datepicker-cell.-range-to-.-range-from- {
+  border-radius: 50%!important
+}
 .new-game__calendar .air-datepicker-cell.-range-from-,
 .new-game__calendar .air-datepicker-cell.-range-to-,
 .new-game__calendar .air-datepicker-cell.-selected- {
@@ -7081,7 +7084,8 @@ fieldset:disabled .btn {
   font-size: 24px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: -.5px
+  letter-spacing: -.5px;
+  text-transform: uppercase
 }
 .cancel-bet__info-item._green {
   color: var(--green)
@@ -7315,7 +7319,8 @@ fieldset:disabled .btn {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: .5px;
-  color: var(--green)
+  color: var(--green);
+  flex-shrink: 0
 }
 .user-card__price._light {
   color: var(--light)
@@ -7359,7 +7364,8 @@ fieldset:disabled .btn {
 .user-card__triangle {
   width: 24px;
   height: 24px;
-  color: var(--light)
+  color: var(--light);
+  flex-shrink: 0
 }
 .transaction {
   border: 1px solid var(--d-stroke-2);
@@ -7624,7 +7630,8 @@ fieldset:disabled .btn {
   border-radius: 8px;
   border: 1px solid var(--d-stroke);
   background-color: var(--mirage);
-  color: var(--d-icons)
+  color: var(--d-icons);
+  transition: color .2s ease,background-color .2s ease,border-color .2s ease
 }
 .btn-rect:hover {
   color: var(--light);
@@ -7655,6 +7662,7 @@ fieldset:disabled .btn {
   font-size: 14px;
   font-weight: 700;
   line-height: 20px;
+  transition: color .2s ease,background-color .2s ease,border-color .2s ease;
   z-index: 1
 }
 .btn-main::after,
@@ -7664,7 +7672,8 @@ fieldset:disabled .btn {
   inset: 0;
   background-color: var(--bg);
   opacity: 0;
-  z-index: -1
+  z-index: -1;
+  transition: opacity .2s ease
 }
 .btn-main:hover::before {
   opacity: .2
@@ -7691,9 +7700,11 @@ fieldset:disabled .btn {
   background: var(--d-stroke)
 }
 .btn-main._green {
+  color: var(--bg);
   background-color: var(--green)
 }
 .btn-main._red {
+  color: var(--bg);
   background-color: var(--red)
 }
 .btn-main._stroke {
@@ -7739,8 +7750,8 @@ fieldset:disabled .btn {
 }
 .modal.show {
   display: flex!important;
-  flex-direction: column;
-  justify-content: flex-end;
+  flex-direction: column!important;
+  justify-content: flex-end!important;
   opacity: 1
 }
 .modal-dialog {
@@ -7920,7 +7931,11 @@ fieldset:disabled .btn {
   position: absolute;
   width: 24px;
   height: 24px;
-  right: 12px
+  right: 12px;
+  transition: color .2s ease
+}
+.input-icon._btn:hover {
+  color: #fff
 }
 .input-check {
   display: none
@@ -7952,7 +7967,8 @@ fieldset:disabled .btn {
   height: 24px;
   color: var(--d-stroke-2);
   border: 2px solid currentColor;
-  border-radius: 50%
+  border-radius: 50%;
+  margin-left: 12px
 }
 .label-check__circle::after,
 .label-check__circle::before {
@@ -8000,6 +8016,10 @@ fieldset:disabled .btn {
 .filters._big .filters__label-check {
   font-size: 16px
 }
+.filters._p-min .filters__btn {
+  padding-left: 8px;
+  padding-right: 8px
+}
 .filters__btn {
   display: flex;
   align-items: center;
@@ -8008,7 +8028,7 @@ fieldset:disabled .btn {
   line-height: 20px;
   letter-spacing: .1px;
   color: var(--light);
-  padding: 10px 8px;
+  padding: 10px 12px;
   border: none;
   flex: 1;
   white-space: nowrap;
@@ -8058,7 +8078,6 @@ fieldset:disabled .btn {
 .statistic__item {
   min-height: 88px;
   display: flex;
-  justify-content: center;
   flex-direction: column;
   border-radius: 20px;
   border: 1px solid var(--d-stroke-2);
@@ -8462,6 +8481,11 @@ fieldset:disabled .btn {
   line-height: 24px;
   letter-spacing: -.5px
 }
+.help__title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px
+}
 .manual__title {
   font-size: 18px;
   font-weight: 700;
@@ -8679,7 +8703,7 @@ fieldset:disabled .btn {
   color: var(--green)
 }
 .transaction-page__status {
-  padding: 6px 8px;
+  padding: 6px 16px 6px 8px;
   border-radius: 12px;
   background-color: var(--d-white-04);
   width: -webkit-fit-content;

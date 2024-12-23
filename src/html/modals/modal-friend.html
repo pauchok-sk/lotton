@@ -7,7 +7,7 @@
 >
   <div class="modal-dialog">
     <div class="modal-content p-4">
-      <div class="d-flex align-items-center gap-2 mb-4">
+      <div class="d-flex align-items-center gap-2 mb-2">
         <h5 class="modal__title flex-fill">Пригласить друга</h5>
         <button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
           <svg class="modal__close-icon">
@@ -19,7 +19,7 @@
         <li class="modal-friend__item d-flex gap-2">
           <p class="flex-fill">Бонусы за успешное приглашение</p>
           <div
-            class="modal-friend__rating d-flex align-items-center gap-1 flex-shrink-0"
+            class="modal-friend__rating d-flex gap-1 flex-shrink-0"
           >
             <img
               src="@img/star.svg"
@@ -31,18 +31,18 @@
         </li>
         <li class="modal-friend__item d-flex gap-2">
           <p class="flex-fill">
-            За каждого друга, которого пригласит ваш друг, вам будут также
+            За каждого друга, <br> которого пригласит ваш друг, вам будут также
             начислены бонусы
           </p>
           <div
-            class="modal-friend__rating d-flex align-items-center gap-1 flex-shrink-0"
+            class="modal-friend__rating d-flex gap-1 flex-shrink-0"
           >
             <img
               src="@img/star.svg"
               alt="icon"
               class="modal-friend__item-icon"
             />
-            <span>10</span>
+            <span>5</span>
           </div>
         </li>
       </ul>
@@ -55,7 +55,7 @@
           value="https://t.me/link"
         />
         <label for="friend-link" class="input-title">Ссылка-приглашение</label>
-        <svg data-copy="https://t.me/link" class="input-icon">
+        <svg data-copy="https://t.me/link" class="input-icon _btn">
           <use xlink:href="img/icons/icons.svg#icon-copy"></use>
         </svg>
       </div>
