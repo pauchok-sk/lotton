@@ -6824,7 +6824,8 @@ fieldset:disabled .btn {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: .5px;
-  color: var(--light)
+  color: var(--light);
+  margin-left: 20px
 }
 .modal-info__price-info {
   text-align: center
