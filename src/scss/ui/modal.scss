@@ -8,14 +8,17 @@
     opacity: 1;
   }
   &-dialog {
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
     width: 100%;
     // max-height: calc(100vh - 10px);
-    // height: 100%;
-    padding-top: 10px;
+    height: calc(100vh - 10px);
     margin: 10px auto 0px auto;
     transform: none !important;
   }
   &-content {
+    overflow-y: auto;
     border-radius: 28px 28px 0px 0px;
     padding: 32px 16px !important;
     background-color: var(--bg);
@@ -115,7 +118,7 @@
 .modal-backdrop {
   background-color: var(--d-stroke);
   opacity: 0;
-  transition: opacity .4s ease !important;
+  transition: opacity 0.4s ease !important;
   &.show {
     opacity: 0.72;
   }
