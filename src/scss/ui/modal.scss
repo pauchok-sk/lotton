@@ -8,11 +8,10 @@
     opacity: 1;
   }
   &-dialog {
-    display: flex !important;
-    flex-direction: column !important;
-    justify-content: flex-end !important;
     width: 100%;
     max-height: calc(100vh - 10px);
+    height: 100%;
+    padding-top: 10px;
     margin: 10px auto 0px auto;
     transform: none !important;
   }
