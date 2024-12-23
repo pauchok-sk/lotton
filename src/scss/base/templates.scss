@@ -10,14 +10,7 @@
   justify-content: space-between;
 }
 @mixin hover {
-  @media (any-hover: hover) {
-    &:hover {
-      @content;
-    }
-  }
-  @media (hover: none) {
-    &:active {
-      @content;
-    }
+  &:hover {
+    @content;
   }
 }

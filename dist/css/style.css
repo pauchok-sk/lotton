@@ -7280,6 +7280,9 @@ fieldset:disabled .btn {
   color: #fff;
   transition: background-color .2s ease
 }
+.user-card:hover {
+  background-color: var(--d-white-04)
+}
 .user-card._win {
   border-color: var(--green);
   background-color: var(--d-green-12)
@@ -7345,6 +7348,9 @@ fieldset:disabled .btn {
   justify-content: center;
   color: var(--d-icons);
   transition: color .2s ease
+}
+.user-card__del:hover {
+  color: var(--orange)
 }
 .user-card__icon-del {
   width: 24px;
@@ -7596,6 +7602,9 @@ fieldset:disabled .btn {
 .tab-bar__btn._active {
   color: var(--orange)
 }
+.tab-bar__btn:hover {
+  color: var(--orange)
+}
 .tab-bar__icon {
   width: 24px;
   height: 24px
@@ -7616,6 +7625,11 @@ fieldset:disabled .btn {
   border: 1px solid var(--d-stroke);
   background-color: var(--mirage);
   color: var(--d-icons)
+}
+.btn-rect:hover {
+  color: var(--light);
+  background-color: var(--d-white-08);
+  border-color: var(--d-stroke-2)
 }
 .btn-rect__icon {
   width: 30px;
@@ -7652,6 +7666,9 @@ fieldset:disabled .btn {
   opacity: 0;
   z-index: -1
 }
+.btn-main:hover::before {
+  opacity: .2
+}
 .btn-main._primary {
   color: var(--bg)
 }
@@ -7662,6 +7679,12 @@ fieldset:disabled .btn {
 .btn-main._primary::after {
   opacity: 0;
   background: var(--orange-dark)
+}
+.btn-main._primary:hover::before {
+  opacity: 0
+}
+.btn-main._primary:hover::after {
+  opacity: 1
 }
 .btn-main._simple {
   color: var(--orange);
@@ -7680,6 +7703,10 @@ fieldset:disabled .btn {
 }
 .btn-main._stroke::before {
   display: none
+}
+.btn-main._stroke:hover {
+  color: var(--orange);
+  border-color: var(--orange)
 }
 .btn-main:disabled {
   pointer-events: none;
@@ -7911,6 +7938,10 @@ fieldset:disabled .btn {
   line-height: 24px;
   letter-spacing: .1px;
   gap: 12px
+}
+.label-check:hover .label-check__circle::after {
+  inset: -8px;
+  background-color: var(--d-white-08)
 }
 .label-check__circle {
   display: flex;
@@ -8592,6 +8623,9 @@ fieldset:disabled .btn {
   transition: color .2s ease;
   text-decoration: none
 }
+.manager-game__download:hover {
+  color: var(--light)
+}
 .manager-game__download-icon {
   width: 18px;
   height: 18px
@@ -8686,6 +8720,9 @@ fieldset:disabled .btn {
   color: var(--d-icons);
   transition: color .2s ease
 }
+.search__btn:hover {
+  color: var(--light)
+}
 .search__btn-icon {
   width: 24px;
   height: 24px
@@ -8727,6 +8764,9 @@ fieldset:disabled .btn {
   line-height: 20px;
   color: var(--orange);
   transition: color .2s ease
+}
+.search__btn-clear:hover {
+  color: var(--light)
 }
 .search__filters-container {
   min-height: calc(100vh - 65px)
@@ -14388,89 +14428,5 @@ fieldset:disabled .btn {
   }
   .d-print-none {
     display: none!important
-  }
-}
-@media (any-hover:hover) {
-  .user-card:hover {
-    background-color: var(--d-white-04)
-  }
-  .user-card__del:hover {
-    color: var(--orange)
-  }
-  .tab-bar__btn:hover {
-    color: var(--orange)
-  }
-  .btn-rect:hover {
-    color: var(--light);
-    background-color: var(--d-white-08);
-    border-color: var(--d-stroke-2)
-  }
-  .btn-main:hover::before {
-    opacity: .2
-  }
-  .btn-main._primary:hover::before {
-    opacity: 0
-  }
-  .btn-main._primary:hover::after {
-    opacity: 1
-  }
-  .btn-main._stroke:hover {
-    color: var(--orange);
-    border-color: var(--orange)
-  }
-  .label-check:hover .label-check__circle::after {
-    inset: -8px;
-    background-color: var(--d-white-08)
-  }
-  .manager-game__download:hover {
-    color: var(--light)
-  }
-  .search__btn:hover {
-    color: var(--light)
-  }
-  .search__btn-clear:hover {
-    color: var(--light)
-  }
-}
-@media (hover:none) {
-  .user-card:active {
-    background-color: var(--d-white-04)
-  }
-  .user-card__del:active {
-    color: var(--orange)
-  }
-  .tab-bar__btn:active {
-    color: var(--orange)
-  }
-  .btn-rect:active {
-    color: var(--light);
-    background-color: var(--d-white-08);
-    border-color: var(--d-stroke-2)
-  }
-  .btn-main:active::before {
-    opacity: .2
-  }
-  .btn-main._primary:active::before {
-    opacity: 0
-  }
-  .btn-main._primary:active::after {
-    opacity: 1
-  }
-  .btn-main._stroke:active {
-    color: var(--orange);
-    border-color: var(--orange)
-  }
-  .label-check:active .label-check__circle::after {
-    inset: -8px;
-    background-color: var(--d-white-08)
-  }
-  .manager-game__download:active {
-    color: var(--light)
-  }
-  .search__btn:active {
-    color: var(--light)
-  }
-  .search__btn-clear:active {
-    color: var(--light)
   }
 }
