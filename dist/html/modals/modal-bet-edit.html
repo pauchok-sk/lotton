@@ -1,8 +1,8 @@
-<div class="modal" id="modal-bet" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="modal-bet-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 	<div class="modal-dialog">
 		<div class="modal-content p-4">
 			<div class="d-flex align-items-center gap-2 mb-2">
-				<h5 class="title-l flex-fill">Сделать ставку</h5>
+				<h5 class="title-l flex-fill">Изменить ставку</h5>
 				<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
 					<svg class="modal__close-icon">
 						<use xlink:href="img/icons/icons.svg#icon-close"></use>
@@ -21,9 +21,6 @@
 					<span>12h:49m</span>
 				</div>
 			</div>
-			<p class="modal-bet__descr mb-4">
-				Figma ipsum component variant main layer. Export layout figjam team prototype auto ipsum. Flows list opacity figma team library variant vector export line.
-			</p>
 			<div class="modal__info-bet d-flex mb-4">
 				<div class="modal__info-bet-item">
 					<span class="modal__info-bet-title">Чет</span>
@@ -46,8 +43,8 @@
 					<label for="odd-bet" class="modal-bet__check-btn">НЕЧЕТ</label>
 				</div>
 				<div class="input-control">
-					<input min="1" max="10" type="number" class="input" id="bet-money" required />
-					<label for="bet-money" class="input-title">Ваша ставка</label>
+					<input min="1" max="10" type="number" value="10" class="input" id="bet-money-edit" required />
+					<label for="bet-money-edit" class="input-title">Ваша ставка</label>
 					<svg class="input-icon">
 						<use xlink:href="img/icons/icons.svg#icon-dollar"></use>
 					</svg>
@@ -55,11 +52,17 @@
 				<p class="modal-bet__content mt-1 mb-4">
 					Минимальная ставка 1$, максимальная 20$
 				</p>
-				<button type="submit" class="btn-main _primary" disabled>
+				<button type="submit" class="btn-main _primary">
 					<svg class="btn-main__icon">
 						<use xlink:href="img/icons/icons.svg#icon-coins"></use>
 					</svg>
-					<span>Сделать ставку</span>
+					<span>Изменить ставку</span>
+				</button>
+				<button type="submit" class="btn-main _clear mt-2">
+					<svg class="btn-main__icon">
+						<use xlink:href="img/icons/icons.svg#icon-trash"></use>
+					</svg>
+					<span>Изменить ставку</span>
 				</button>
 			</form>
 		</div>

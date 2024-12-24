@@ -8,8 +8,8 @@
 	<link rel="shortcut icon" href="favicon.ico" />
 	<link rel="preconnect" href="https://fonts.googleapis.com" />
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20241223234956" rel="stylesheet" />
-	<link rel="stylesheet" href="css/style.min.css?_v=20241223234956" />
+	<link href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap&_v=20241224180727" rel="stylesheet" />
+	<link rel="stylesheet" href="css/style.min.css?_v=20241224180727" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
@@ -88,7 +88,7 @@
 							<span>Сделать ставку</span>
 						</button>
 					</div>
-					<div class="game-card p-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-bet-edit" class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
 							<span class="game-card__price">1 000 000 $</span>
@@ -120,10 +120,10 @@
 							<span>Ставка сделана</span>
 						</div>
 					</div>
-					<div class="game-card p-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-bet-read" class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
-							<span class="game-card__price _light">1 000 000 $</span>
+							<span class="game-card__price _gray">1 000 000 $</span>
 							<div class="game-card__time d-flex align-items-center gap-1">
 								<svg class="game-card__time-icon">
 									<use xlink:href="img/icons/icons.svg#icon-hourglass"></use>
@@ -145,14 +145,14 @@
 								<span class="game-card__body-content">67%</span>
 							</div>
 						</div>
-						<div class="game-card__status d-flex align-items-center gap-2 justify-content-center">
+						<div class="game-card__status d-flex align-items-center gap-2 justify-content-center _gray">
 							<svg class="game-card__status-icon">
 								<use xlink:href="img/icons/icons.svg#icon-coins"></use>
 							</svg>
 							<span>Приём ставок окончен</span>
 						</div>
 					</div>
-					<div class="game-card p-2">
+					<div data-bs-toggle="modal" data-bs-target="#modal-bet-edit" class="game-card p-2">
 						<div class="d-flex align-items-center justify-content-between gap-2">
 							<div class="game-card__number">№123456</div>
 							<span class="game-card__price">1 000 000 $</span>
@@ -181,7 +181,7 @@
 							<svg class="game-card__status-icon">
 								<use xlink:href="img/icons/icons.svg#icon-coins"></use>
 							</svg>
-							<span>Приём ставок окончен</span>
+							<span>Ставка сделана</span>
 						</div>
 					</div>
 				</div>
@@ -213,8 +213,11 @@
 						<span>12h:49m</span>
 					</div>
 				</div>
+				<p class="modal-bet__descr mb-4">
+					Figma ipsum component variant main layer. Export layout figjam team prototype auto ipsum. Flows list opacity figma team library variant vector export line.
+				</p>
 				<div class="modal__info-bet d-flex mb-4">
-					<div class="modal__info-bet-item _selected">
+					<div class="modal__info-bet-item">
 						<span class="modal__info-bet-title">Чет</span>
 						<span class="modal__info-bet-value">36%</span>
 					</div>
@@ -255,6 +258,125 @@
 		</div>
 	</div>
 
+	<div class="modal" id="modal-bet-read" tabindex="-1" aria-labelledby="modalInfo" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content p-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
+					<h5 class="modal__title flex-fill">Ставка сделана</h5>
+					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="d-flex align-items-center justify-content-between gap-2 mb-4">
+					<span class="modal__number">№123456</span>
+					<span class="modal-bet__price">1 000 000 $</span>
+					<div class="modal__number _primary-green">
+						<svg class="modal__number-icon">
+							<use xlink:href="img/icons/icons.svg#icon-hourglass"></use>
+						</svg>
+						<span>Ожидание</span>
+					</div>
+				</div>
+				<div class="modal__info-bet d-flex mb-4">
+					<div class="modal__info-bet-item _selected">
+						<span class="modal__info-bet-title">Чет</span>
+						<span class="modal__info-bet-value">36%</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Всего ставок</span>
+						<div class="modal__info-bet-value d-flex align-items-center gap-2">
+							<span>12 456</span>
+							<svg class="modal__info-bet-icon">
+								<use xlink:href="img/icons/icons.svg#icon-lock"></use>
+							</svg>
+						</div>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Нечет</span>
+						<span class="modal__info-bet-value">67%</span>
+					</div>
+				</div>
+				<div class="modal-info__res py-3">
+					<h5 class="modal-info__res-title mb-2">10$ на четное</h5>
+					<span class="modal-info__res-content">Участвую</span>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="modal-bet-edit" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content p-4">
+				<div class="d-flex align-items-center gap-2 mb-2">
+					<h5 class="title-l flex-fill">Изменить ставку</h5>
+					<button data-bs-dismiss="modal" aria-label="Close" class="modal__close">
+						<svg class="modal__close-icon">
+							<use xlink:href="img/icons/icons.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+				<div class="d-flex align-items-center justify-content-between gap-2 mb-4">
+					<div class="modal__number">
+						<span>№123456</span>
+					</div>
+					<span class="modal-bet__price">1 000 000 $</span>
+					<div class="modal__number">
+						<svg class="modal__number-icon">
+							<use xlink:href="img/icons/icons.svg#icon-timer"></use>
+						</svg>
+						<span>12h:49m</span>
+					</div>
+				</div>
+				<div class="modal__info-bet d-flex mb-4">
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Чет</span>
+						<span class="modal__info-bet-value">36%</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Всего ставок</span>
+						<span class="modal__info-bet-value">12 456</span>
+					</div>
+					<div class="modal__info-bet-item">
+						<span class="modal__info-bet-title">Нечет</span>
+						<span class="modal__info-bet-value">67%</span>
+					</div>
+				</div>
+				<form action="#">
+					<div class="modal-bet__checkbox d-flex mb-4">
+						<input type="radio" id="even-bet" name="bet-even-odd" class="modal-bet__check-input" required />
+						<label for="even-bet" class="modal-bet__check-btn">ЧЁТ</label>
+						<input type="radio" id="odd-bet" name="bet-even-odd" class="modal-bet__check-input" required />
+						<label for="odd-bet" class="modal-bet__check-btn">НЕЧЕТ</label>
+					</div>
+					<div class="input-control">
+						<input min="1" max="10" type="number" value="10" class="input" id="bet-money-edit" required />
+						<label for="bet-money-edit" class="input-title">Ваша ставка</label>
+						<svg class="input-icon">
+							<use xlink:href="img/icons/icons.svg#icon-dollar"></use>
+						</svg>
+					</div>
+					<p class="modal-bet__content mt-1 mb-4">
+						Минимальная ставка 1$, максимальная 20$
+					</p>
+					<button type="submit" class="btn-main _primary">
+						<svg class="btn-main__icon">
+							<use xlink:href="img/icons/icons.svg#icon-coins"></use>
+						</svg>
+						<span>Изменить ставку</span>
+					</button>
+					<button type="submit" class="btn-main _clear mt-2">
+						<svg class="btn-main__icon">
+							<use xlink:href="img/icons/icons.svg#icon-trash"></use>
+						</svg>
+						<span>Изменить ставку</span>
+					</button>
+				</form>
+			</div>
+		</div>
+	</div>
+
 	<div class="tab-bar__show"></div>
 	<div class="tab-bar">
 		<nav class="tab-bar__nav d-flex align-items-end gap-2">
@@ -285,7 +407,7 @@
 		</nav>
 	</div>
 
-	<script src="js/app.min.js?_v=20241223234956"></script>
+	<script src="js/app.min.js?_v=20241224180727"></script>
 </body>
 
 </html>

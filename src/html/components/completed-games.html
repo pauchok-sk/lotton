@@ -37,6 +37,38 @@
         </div>
       </div>
       <div
+      class="game-card p-2"
+      data-bs-toggle="modal"
+      data-bs-target="#modal-info"
+    >
+      <div class="d-flex align-items-center justify-content-between gap-2">
+        <div class="game-card__number">№123456</div>
+        <span class="game-card__price _gray">1 000 000 $</span>
+        <div class="game-card__time d-flex align-items-center gap-1">
+          <svg class="game-card__time-icon">
+            <use xlink:href="img/icons/icons.svg#icon-timer"></use>
+          </svg>
+          <span>12h:49m</span>
+        </div>
+      </div>
+      <div
+        class="game-card__body d-flex align-items-center justify-content-between gap-2 my-2"
+      >
+        <div class="game-card__body-item _green">
+          <span class="game-card__body-title">Чет</span>
+          <span class="game-card__body-content">36%</span>
+        </div>
+        <div class="game-card__body-item">
+          <span class="game-card__body-title">Всего ставок</span>
+          <span class="game-card__body-content">12 456</span>
+        </div>
+        <div class="game-card__body-item">
+          <span class="game-card__body-title">Нечет</span>
+          <span class="game-card__body-content">67%</span>
+        </div>
+      </div>
+    </div>
+      <div
         data-bs-toggle="modal"
         data-bs-target="#modal-info-loss"
         class="game-card p-2 _loss"

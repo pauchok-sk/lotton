@@ -42,6 +42,9 @@
     &._light {
       color: var(--light);
     }
+    &._gray {
+      color: var(--d-stroke-2);
+    }
   }
   &__time {
     padding: 4px 8px;
@@ -116,6 +119,10 @@
     font-weight: 700;
     line-height: 20px;
     min-height: 40px;
+
+    &._gray {
+      color: var(--d-stroke-2);
+    }
   }
   &__status-icon {
     width: 18px;

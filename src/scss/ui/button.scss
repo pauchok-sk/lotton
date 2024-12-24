@@ -112,6 +112,14 @@
       border-color: var(--orange);
     }
   }
+  &._clear {
+    color: var(--d-stroke-2);
+    background-color: transparent;
+    border: none;
+    @include hover {
+      color: var(--orange);
+    }
+  }
 
   &:disabled {
     pointer-events: none;

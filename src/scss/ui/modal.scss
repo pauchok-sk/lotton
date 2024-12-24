@@ -64,6 +64,11 @@
     line-height: 16px;
     letter-spacing: 0.5px;
     color: var(--light);
+
+    &._primary-green {
+      background-color: var(--green);
+      color: var(--bg);
+    }
   }
   &__number-icon {
     width: 12px;
