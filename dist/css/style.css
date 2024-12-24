@@ -7013,6 +7013,13 @@ fieldset:disabled .btn {
   z-index: 1;
   aspect-ratio: 1/1
 }
+.new-game__calendar .air-datepicker-cell.-month- {
+  aspect-ratio: initial
+}
+.new-game__calendar .air-datepicker-cell.-month-:hover {
+  background-color: var(--purple)!important;
+  color: #fff
+}
 .new-game__calendar .air-datepicker-cell::before {
   position: absolute;
   content: "";

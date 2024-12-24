@@ -41,6 +41,14 @@
       z-index: 1;
       aspect-ratio: 1 / 1;
 
+      &.-month- {
+        aspect-ratio:initial;
+        @include hover {
+          background-color: var(--purple) !important;
+          color: white;
+        }
+      }
+
       &::before {
         position: absolute;
         content: "";
