@@ -7016,17 +7016,12 @@ fieldset:disabled .btn {
 .new-game__calendar .air-datepicker-cell.-month-,
 .new-game__calendar .air-datepicker-cell.-year- {
   aspect-ratio: initial;
+  background: 0 0!important;
   border-radius: 5px!important
 }
 .new-game__calendar .air-datepicker-cell.-month-::before,
 .new-game__calendar .air-datepicker-cell.-year-::before {
-  border-radius: 5px!important;
   display: none!important
-}
-.new-game__calendar .air-datepicker-cell.-month-:hover,
-.new-game__calendar .air-datepicker-cell.-year-:hover {
-  background-color: var(--purple)!important;
-  color: #fff
 }
 .new-game__calendar .air-datepicker-cell::before {
   position: absolute;
