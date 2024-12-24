@@ -7015,15 +7015,16 @@ fieldset:disabled .btn {
 }
 .new-game__calendar .air-datepicker-cell.-month-,
 .new-game__calendar .air-datepicker-cell.-year- {
-  aspect-ratio: initial
+  aspect-ratio: initial;
+  border-radius: 5px!important
 }
 .new-game__calendar .air-datepicker-cell.-month-::before,
 .new-game__calendar .air-datepicker-cell.-year-::before {
+  border-radius: 5px!important;
   display: none!important
 }
 .new-game__calendar .air-datepicker-cell.-month-:hover,
 .new-game__calendar .air-datepicker-cell.-year-:hover {
-  border-radius: 5px!important;
   background-color: var(--purple)!important;
   color: #fff
 }

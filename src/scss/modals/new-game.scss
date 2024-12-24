@@ -43,11 +43,12 @@
 
       &.-month-, &.-year- {
         aspect-ratio:initial;
+        border-radius: 5px !important;
         &::before {
+          border-radius: 5px !important;
           display: none !important;
         }
         @include hover {
-          border-radius: 5px !important;
           background-color: var(--purple) !important;
           color: white;
         }
