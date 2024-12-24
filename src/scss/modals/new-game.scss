@@ -41,15 +41,6 @@
       z-index: 1;
       aspect-ratio: 1 / 1;
 
-      &.-month-, &.-year- {
-        aspect-ratio:initial;
-        background: none !important;
-        border-radius: 5px !important;
-        &::before {
-          display: none !important;
-        }
-      }
-
       &::before {
         position: absolute;
         content: "";
@@ -86,6 +77,25 @@
       }
       &.-current- {
         color: var(--light) !important;
+      }
+
+      &.-month-,
+      &.-year- {
+        aspect-ratio: initial;
+        background: none !important;
+        border-radius: 5px !important;
+        &::before {
+          display: none !important;
+        }
+
+        &.-selected- {
+          aspect-ratio: initial;
+          background: none !important;
+          border-radius: 5px !important;
+          &::before {
+            display: none !important;
+          }
+        }
       }
     }
   }

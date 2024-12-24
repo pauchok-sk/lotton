@@ -7013,16 +7013,6 @@ fieldset:disabled .btn {
   z-index: 1;
   aspect-ratio: 1/1
 }
-.new-game__calendar .air-datepicker-cell.-month-,
-.new-game__calendar .air-datepicker-cell.-year- {
-  aspect-ratio: initial;
-  background: 0 0!important;
-  border-radius: 5px!important
-}
-.new-game__calendar .air-datepicker-cell.-month-::before,
-.new-game__calendar .air-datepicker-cell.-year-::before {
-  display: none!important
-}
 .new-game__calendar .air-datepicker-cell::before {
   position: absolute;
   content: "";
@@ -7061,6 +7051,26 @@ fieldset:disabled .btn {
 }
 .new-game__calendar .air-datepicker-cell.-current- {
   color: var(--light)!important
+}
+.new-game__calendar .air-datepicker-cell.-month-,
+.new-game__calendar .air-datepicker-cell.-year- {
+  aspect-ratio: initial;
+  background: 0 0!important;
+  border-radius: 5px!important
+}
+.new-game__calendar .air-datepicker-cell.-month-::before,
+.new-game__calendar .air-datepicker-cell.-year-::before {
+  display: none!important
+}
+.new-game__calendar .air-datepicker-cell.-month-.-selected-,
+.new-game__calendar .air-datepicker-cell.-year-.-selected- {
+  aspect-ratio: initial;
+  background: 0 0!important;
+  border-radius: 5px!important
+}
+.new-game__calendar .air-datepicker-cell.-month-.-selected-::before,
+.new-game__calendar .air-datepicker-cell.-year-.-selected-::before {
+  display: none!important
 }
 .new-game__calendar-head {
   border-bottom: 1px solid var(--d-stroke)
