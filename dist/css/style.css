@@ -7013,10 +7013,17 @@ fieldset:disabled .btn {
   z-index: 1;
   aspect-ratio: 1/1
 }
-.new-game__calendar .air-datepicker-cell.-month- {
+.new-game__calendar .air-datepicker-cell.-month-,
+.new-game__calendar .air-datepicker-cell.-year- {
   aspect-ratio: initial
 }
-.new-game__calendar .air-datepicker-cell.-month-:hover {
+.new-game__calendar .air-datepicker-cell.-month-::before,
+.new-game__calendar .air-datepicker-cell.-year-::before {
+  display: none!important
+}
+.new-game__calendar .air-datepicker-cell.-month-:hover,
+.new-game__calendar .air-datepicker-cell.-year-:hover {
+  border-radius: 5px!important;
   background-color: var(--purple)!important;
   color: #fff
 }
