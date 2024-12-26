@@ -1,4 +1,3 @@
-@import "./fonts/fonts";
 @import "./base/normalize";
 @import "./base/vars";
 @import "./base/templates";
@@ -7,8 +6,8 @@
 @import "./base/body-config";
 @import "./base/config-container";
 
-@import "./libs/bootstrap.min";
-@import "./libs/nouislider";
+// @import "./libs/bootstrap.min";
+// @import "./libs/nouislider";
 
 // modals
 @import "./modals/modal-bet";
