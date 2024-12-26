@@ -7,8 +7,8 @@ import copy from "./files/copy.js";
 import burger from "./files/burger.js";
 import date from "./files/date.js";
 import ranges from "./files/ranges.js";
-import tippy from 'tippy.js';
 import collectBouns from "./files/collectBonus.js";
+import tippyInit from "./files/tippy.js";
 
 spoller();
 tab();
@@ -17,5 +17,4 @@ burger();
 date();
 ranges();
 collectBouns();
-
-tippy('[data-tippy-content]');
+tippyInit();
